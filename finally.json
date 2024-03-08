@@ -1,0 +1,750 @@
+[
+    {
+      "name": "Overview of the Data Product",
+      "example_content": "The Customer 360 Data Product represents a transformative solution designed to empower organizations with a holistic and unified view of their customers. By consolidating data from various touchpoints and sources, this product aims to provide deep insights into customer behavior, preferences, and interactions. The comprehensive customer profiles generated enable businesses to enhance customer experiences, optimize marketing strategies, and make informed, data-driven decisions.",
+      "data_function": "data_dataproduct_overview()"
+    },
+    {
+      "name": "Purpose and Objectives",
+      "example_content": "The primary purpose of the Customer 360 Data Product is to equip organizations with a powerful tool that facilitates a nuanced understanding of their customer base. By aggregating and analyzing diverse datasets, the product aims to achieve the following objectives:",
+      "subsection": [
+                  {
+                      "name": "Enhance Customer Engagement",
+                      "example_content": "Enable personalized and targeted customer interactions by leveraging insights derived from a 360-degree view of customer profiles."
+                  },
+                  {
+                      "name": "Optimize Marketing Strategies",
+                      "example_content": "Facilitate data-driven marketing campaigns, segmentation, and targeting, resulting in improved campaign effectiveness and customer conversion rates."
+                  },
+                  {
+                      "name": "Drive Operational Efficiency",
+                      "example_content": "Support decision-making processes by providing actionable insights to various business functions, ultimately improving operational efficiency and resource allocation."
+                  },
+                  {
+                      "name": "Increase Customer Retention and Loyalty",
+                      "example_content": "Identify at-risk customers, implement proactive retention strategies, and enhance overall customer satisfaction, fostering loyalty and repeat business."
+                  }],
+   "data_function": "data_purpose_and_objectives()"
+    },
+    {
+      "name": "Target Audience",
+      "example_content": "The Customer 360 Data Product is tailored to meet the needs of diverse professionals involved in data analysis, engineering, and science. The primary target audience includes:",
+      "subsection": [
+                   {
+                      "name": "Business Analysts",
+                      "example_content": "Individuals responsible for interpreting and translating business requirements into data-driven insights. Business analysts will leverage the product to derive actionable recommendations for enhancing customer experiences and driving business outcomes."
+                   },
+                   {
+                      "name": "Data Engineers",
+                      "example_content": "Professionals tasked with designing, implementing, and maintaining the data infrastructure. Data engineers will play a crucial role in ensuring seamless data integration, reliability, and real-time updates within the Customer 360 Data Product."
+                   },
+                   {
+                      "name": "Data Scientists",
+                      "example_content": "Experts in statistical analysis, machine learning, and predictive modeling who will utilize the product to uncover hidden patterns, forecast customer behaviors, and contribute to the development of advanced analytics solutions."
+                   }
+                  ],
+      "data_function": "data_target_audience()"
+    },
+    {
+      "name": "Document Version and Change History",
+      "example_content": "Document Version: 1.0\nLast Updated: 12-12-2023",
+      "data_function":"data_document_version"
+    },
+    {
+      "name": "Product Description",
+      "example_content": "The Customer 360 Data Product is a cutting-edge solution designed to provide organizations with a unified and dynamic view of their customers. At its core, the product consolidates data from diverse sources, including CRM systems, sales transactions, customer support interactions, and online engagements, to create a comprehensive 360-degree view of each customer. This high-level description encapsulates the essence of a transformative tool that enables businesses to gain profound insights into customer behavior, preferences, and interactions. Below are the key features and capabilities:",
+      "subsection": [  
+            {
+              "name": "Data Integration",
+              "example_content": "Seamless integration of data from multiple sources, ensuring a unified and enriched customer profile."
+            },
+            {
+              "name": "360-Degree Customer Profile",
+              "example_content": "Comprehensive customer profiles encompassing demographic information, purchase history, communication preferences, and more."
+            },
+            {
+              "name": "Real-time Updates",
+              "example_content": "Continuous and real-time updates to keep customer profiles current, facilitating prompt responses to changing customer behaviors."
+            },
+            {
+              "name": "Advanced Analytics and Reporting",
+              "example_content": "Powerful analytics tools and customizable reporting dashboards for deriving actionable insights from customer data."
+            },
+            {
+              "name": "Segmentation and Targeting",
+              "example_content": "Tools for segmenting customers based on various criteria, enabling personalized marketing and communication strategies."
+            },
+            {
+              "name": "Predictive Analytics",
+              "example_content": "Utilization of predictive modeling and machine learning algorithms to forecast customer behaviors and recommend personalized offerings."
+            },
+            {
+              "name": "Security and Compliance",
+              "example_content": "Stringent security measures and data governance protocols to ensure the accuracy, reliability, and privacy of customer information."
+            }
+          ],
+      "data_function": ""
+    },  
+    {
+      "name": "Business Context and Application",
+      "example_content": "The Customer 360 Data Product finds application across diverse business contexts, including:",
+      "subsection":[
+          {
+              "name": "Marketing Optimization",
+              "example_content": "Tailoring marketing campaigns based on customer insights to enhance targeting and campaign effectiveness."
+          },
+          {
+              "name": "Customer Retention",
+              "example_content": "Implementing proactive retention strategies by identifying at-risk customers and addressing their needs."
+          },
+          {
+              "name": "Operational Efficiency",
+              "example_content": "Supporting decision-making processes and resource allocation through data-driven insights."
+          },
+          {
+              "name": "Personalized Customer Experiences",
+              "example_content": "Enabling personalized interactions and experiences by leveraging a deep understanding of individual customer preferences."
+          }
+      ],
+      "data_function":""
+  },
+  {
+      "name": "Expected Outcomes and Benefits",
+      "example_content": "Implementing the Customer 360 Data Product is expected to yield the following outcomes and benefits:",
+      "subsection":[
+          {
+              "name": "Improved Customer Satisfaction",
+              "example_content": "Enhanced customer experiences through personalized interactions and targeted communication."
+          },
+          {
+              "name": "Increased Revenue",
+              "example_content": "Identification of cross-selling and upselling opportunities, leading to increased revenue generation."
+          },
+          {
+              "name": "Reduced Churn",
+              "example_content": "Proactive identification and addressing of at-risk customers, resulting in reduced churn rates."
+          },
+          {
+              "name": "Data-Driven Decision-Making",
+              "example_content": "Empowering organizations with data-driven insights for strategic decision-making."
+          },
+          {
+              "name": "Enhanced Marketing ROI",
+              "example_content": "Optimizing marketing strategies and campaigns for improved return on investment."
+      }],
+      "data_function": ""
+  },
+  {
+      "name": "Technical Specifications of Lens",
+      "example_content": "Customer 360 Lens",
+      "subsection":[
+          {
+              "name": "Recency Frequency and Monitoring (RMF) Analysis:",
+              "example_content": "The integration of RFM (Recency, Frequency, Monetary Value) analysis within Customer 360 (C360) lenses has empowered businesses to deeply understand customer behaviour and tailor marketing strategies effectively. By analyzing recent interactions (Recency), frequency of engagement (Frequency), and monetary contributions (Monetary Value), C360 segments customers into groups. This segmentation helps identify high-value, loyal customers for personalized engagement strategies. It also highlights dormant segments requiring re-engagement tactics to prevent potential churn. Utilizing RFM within C360 lenses elevates targeted marketing, enhances customer experiences, and fosters long-term loyalty, driving revenue growth and informed decision-making."
+          },
+          {
+              "name": "Recency:",
+              "example_content": "Recency in RFM analysis within C360 lenses illuminates recent customer engagements, indicating their current activity levels and potential ongoing interactions. This metric enables businesses to identify active customers more likely to respond to immediate marketing strategies or personalized offers. Leveraging recency insights allows for targeted engagement, potentially boosting immediate sales or eliciting prompt customer responses, thus elevating overall customer satisfaction and engagement levels."
+          },
+          {
+              "name": "Frequency:",
+              "example_content": "Frequency analysis in C360 lenses delves into customer engagement consistency, signifying customer loyalty and habitual interactions. This aspect identifies highly engaged customers, forming the foundation for strategies aimed at retaining loyalty and encouraging repeat interactions. Segmentation and understanding of high-frequency customers empower businesses to design targeted marketing efforts and loyalty programs tailored to maintain and potentially increase these customers' lifetime value, ensuring sustained revenue streams."
+          },
+          {
+              "name": "Monitoring:",
+              "example_content": "within C360 lenses' Monetary Value assessment, involves continual tracking of customer transactions and their impact on overall revenue. This process identifies high-value customers whose spending significantly influences business success. Through ongoing monitoring, tailored strategies like exclusive offers or personalized services are applied to retain and increase spending from these customers. Prioritizing enhanced experiences for such clientele maximizes their contribution to the company's financial success."
+          },
+          {
+              "name": "Description of Tables",
+              "example_content": "Column Name, Description, Type, and Dimensions of Table",
+              "subsection":[
+                  {
+                    "name": "Customer",
+                    "example_content": "| Column Name      | Description                                     | Type   | Dimension |\\n|------------------|-------------------------------------------------|--------|-----------|\\n| customer_id     | unique identifier of the customer               | DIMENSION | Customer |\\n| first_name      | Business first name the customer operates under | DIMENSION | Customer |\\n| last_name       | Business last name the customer operates under  | DIMENSION | Customer |\\n| birth_date      | Birth date of the customer                      | DIMENSION | Customer |\\n| gender           | gender of the customer                          | DIMENSION | Customer |\\n| marital_status  | marital status of the customer                  | DIMENSION | Customer |\\n| hobbies          | hobbies of the customer                         | DIMENSION | Customer |\\n| annual_income   | annual income of the customer                   | METRIC   | Customer |\\n| email_id        | email address of the customer                  | DIMENSION | Customer |\\n| phone_number    | contact number of the customer                  | DIMENSION | Customer |\\n| mailing_street  | postal address of the customer                  | DIMENSION | Customer |\\n| country          | name of the county                              | DIMENSION | Customer |\\n| state            | state code where the customer physical address is located | DIMENSION | Customer |\\n| city             | name of the city                                | DIMENSION | Customer |\\n| zip_code        | ZIP code associate with the customer physical address | DIMENSION | Customer |\\n| register_date   | registered date of customer                     | DIMENSION | Customer |\\n| ${customer.customer_id} | count of total customers              | METRIC   | Customer |"
+                  },
+                  {
+                    "name": "Product views",
+                    "example_content": "| Column Name | Description | Type | Dimension |\\n| --- | --- | --- | --- |\\n| session_id | session identifier of the activity event | DIMENSION | Product views |\\n| activity_uuid | unique identifier of the activity event | DIMENSION | Product views |\\n| visit_start_ts | timestamp of the moment when visit occured | DIMENSION | Product views |\\n| entity_id | customer identifier | DIMENSION | Product views |\\n| activity_year | year of the moment when activity occured | DIMENSION | Product views |\\n| activity_ts | timestamp of the moment when activity occured | DIMENSION | Product views |\\n| product_sku | product identifier | DIMENSION | Product views |\\n| activity_month | month of the moment when activity occured | DIMENSION | Product views |\\n| traffic_channel | user acquisition channel name | DIMENSION | Product views |\\n| event_action | event action name for activity | DIMENSION | Product views |\\n| occurence | number of occurence for activity | METRIC | Product views |\\n| traffic_source | user acquisition source name | DIMENSION | Product views |\\n| ${product_views.session_id} | product view session count | METRIC | Product views |\\n| activity_repeated_at | recurring activity timestamp | DIMENSION | Product views |\\n| ${product_views.product_sku} | total number of product that viewed | METRIC | Product views |\\n| ROUND(DATE_DIFF('second', MIN(${product_views.visit_start_ts}), MAX (${product_views.activity_ts}))/cast(60 as double),2) | session engagement time in minute | METRIC | Product views |\\n| day(current_date - date(${product_views.activity_ts})) | number of days of activity from current date | METRIC | Product views |\\n| day(current_date - date(${product_views.activity_ts})) | days since last product was viewed | METRIC | Product views |"
+                  },
+                  {
+                    "name": "Items added to favourite",
+                    "example_content": "| Column Name       | Description                                | Type      | Dimension               |\\n|-------------------|--------------------------------------------|-----------|-------------------------|\\n| activity_uuid     | unique identifier of the activity event    | DIMENSION | Items added to favourite |\\n| session_id        | session identifier of the activity event   | DIMENSION | Items added to favourite |\\n| entity_id         | customer identifier                        | DIMENSION | Items added to favourite |\\n| activity_ts       | timestamp of the moment when activity occured | DIMENSION | Items added to favourite |\\n| product_sku       | product identifier                        | DIMENSION | Items added to favourite |\\n| product_name      | product name                              | DIMENSION | Items added to favourite |\\n| category_name     | product's category name                   | DIMENSION | Items added to favourite |\\n| subcategory_name  | product's subcategory name                | DIMENSION | Items added to favourite |\\n| brand_name        | product's brand name                      | DIMENSION | Items added to favourite |\\n| parent_company    | brand's parent company name               | DIMENSION | Items added to favourite |\\n| product_price     | price of the product                      | METRIC    | Items added to favourite |\\n| quantity          | quantity of the order was placed for     | METRIC    | Items added to favourite |\\n| order_value       | sales of order was placed for            | METRIC    | Items added to favourite |\\n| event_action      | event action name for activity           | DIMENSION | Items added to favourite |\\n| traffic_channel   | user acquisition channel name             | DIMENSION | Items added to favourite |\\n| traffic_source    | user acquisition source name              | DIMENSION | Items added to favourite |\\n| occurence         | number of occurence for activity          | METRIC    | Items added to favourite |\\n| activity_repeated_at | recurring activity timestamp           | DIMENSION | Items added to favourite |\\n| ${items_added_to_favorite.session_id} | count of unique sessions                | METRIC    | Items added to favourite |\\n| ${items_added_to_favorite.product_sku} | total number of items was favourited    | METRIC    | Items added to favourite |\\n| day(current_date - date(${items_added_to_favorite.activity_ts})) | number of days of activity from current date | METRIC    | Items added to favourite |"
+                  },
+                  {
+                    "name": "Items added to cart",
+                    "example_content": "| Column Name       | Description                                | Type      | Dimension            |\\n|-------------------|--------------------------------------------|-----------|----------------------|\\n| activity_uuid     | unique identifier of the activity event    | DIMENSION | Items added to cart |\\n| session_id        | session identifier of the activity event   | DIMENSION | Items added to cart |\\n| entity_id         | customer identifier                        | DIMENSION | Items added to cart |\\n| activity_ts       | timestamp of the moment when activity occured | DIMENSION | Items added to cart |\\n| product_sku       | product identifier                        | DIMENSION | Items added to cart |\\n| product_name      | product name                              | DIMENSION | Items added to cart |\\n| category_name     | product's category name                   | DIMENSION | Items added to cart |\\n| subcategory_name  | product's subcategory name                | DIMENSION | Items added to cart |\\n| brand_name        | product's brand name                      | DIMENSION | Items added to cart |\\n| parent_company    | brand's parent company name               | DIMENSION | Items added to cart |\\n| product_price     | price of the product                      | METRIC    | Items added to cart |\\n| quantity          | quantity of the order was placed for     | METRIC    | Items added to cart |\\n| order_value       | sales of order was placed for            | METRIC    | Items added to cart |\\n| event_action      | event action name for activity           | DIMENSION | Items added to cart |\\n| traffic_channel   | user acquisition channel name             | DIMENSION | Items added to cart |\\n| traffic_source    | user acquisition source name              | DIMENSION | Items added to cart |\\n| occurence         | number of occurence for activity          | METRIC    | Items added to cart |\\n| activity_repeated_at | recurring activity timestamp           | DIMENSION | Items added to cart |\\n| ${items_added_to_cart.session_id} | count of unique sessions                | METRIC    | Items added to cart |\\n| ${items_added_to_cart.product_sku} | total number of items was added to cart | METRIC    | Items added to cart |\\n| ${items_added_to_cart.quantity} | total quantity of items was added to cart | METRIC    | Items added to cart |\\n| day(current_date - date(${items_added_to_cart.activity_ts})) | number of days of activity from current date | METRIC    | Items added to cart |"
+                  },
+                  {
+                    "name": "Order placed",
+                    "example_content": "| Column Name       | Description                                | Type      | Dimension            |\\n|-------------------|--------------------------------------------|-----------|----------------------|\\n| activity_uuid     | unique identifier of the activity event    | DIMENSION | Order placed         |\\n| session_id        | session identifier of the activity event   | DIMENSION | Order placed         |\\n| entity_id         | customer identifier                        | DIMENSION | Order placed         |\\n| activity_ts       | timestamp of the moment when activity occurred | DIMENSION | Order placed         |\\n| activity_year     | year of the moment when activity occurred | DIMENSION | Order placed         |\\n| activity_month    | month of the moment when activity occurred | DIMENSION | Order placed         |\\n| transaction_id    | transaction identifier                    | DIMENSION | Order placed         |\\n| product_sku       | product identifier                        | DIMENSION | Order placed         |\\n| product_name      | product name                              | DIMENSION | Order placed         |\\n| category_name     | product's category name                   | DIMENSION | Order placed         |\\n| subcategory_name  | product's subcategory name                | DIMENSION | Order placed         |\\n| brand_name        | product's brand name                      | DIMENSION | Order placed         |\\n| parent_company    | brand's parent company name               | DIMENSION | Order placed         |\\n| product_price     | price of the product                      | METRIC    | Order placed         |\\n| quantity          | quantity of the order was placed for     | METRIC    | Order placed         |\\n| order_value       | sales of order was placed for            | METRIC    | Order placed         |\\n| event_action      | event action name for activity           | DIMENSION | Order placed         |\\n| traffic_channel   | user acquisition channel name             | DIMENSION | Order placed         |\\n| traffic_source    | user acquisition source name              | DIMENSION | Order placed         |\\n| occurence         | number of occurrence for activity         | METRIC    | Order placed         |\\n| activity_repeated_at | recurring activity timestamp           | DIMENSION | Order placed         |\\n| ${order_placed.session_id} | count of unique sessions                | METRIC    | Order placed         |\\n| day(current_date - date(${order_placed.activity_ts})) | days since last order was placed     | METRIC    | Order placed         |\\n| cast(count(distinct(${order_placed.transaction_id})) as decimal(20,0 )) | count of total activities.           | METRIC    | Order placed         |\\n| cast(count(distinct(${order_placed.transaction_id})) FILTER (WHERE ${order_placed.duration_in_days} between {{start_day:0}} and {{end_day:365}}) as decimal(20,0)) | count of total activities.           | METRIC    | Order placed         |\\n| round(sum(${order_placed.order_value}),2) | total order value                         | METRIC    | Order placed         |\\n| ${order_placed.transaction_id} | unique order_no for a customer           | DIMENSION | Order placed         |\\n| day(current_date - date(${order_placed.activity_ts})) | number of days of activity from current date | METRIC    | Order placed         |"
+                  },
+                  {             
+                    "name": "Segment",
+                    "example_content": "| Column Name       | Description                             | Type   | Dimension |\\n|-------------------|-----------------------------------------|--------|-----------|\\n| segment_name      | name of the audience                    | DIMENSION | Segment   |\\n| customer_id       | unique identifier of the customer       | DIMENSION | Segment   |\\n| ${segment.customer_id} | count of customers categorized into segments | METRIC | Segment   |"
+                  }]
+          }],
+      "data_function":""
+  },
+  {
+      "name": "Data Sources and Formats",
+      "example_content": "Datasets",
+      "subsection": [
+          {
+              "name": "Customer",
+              "example_content": [
+                  "Product",
+                  "Orders",
+                  "Transactions",
+                  "Order line item",
+                  "Web Analytics",
+                  "Brands"
+              ]
+          },
+          {
+              "name": "Entity Relationship Diagram",
+              "example_content": [
+                  "![](RackMultipart20240226-1-jx33px_html_a387792e96daf0c2.png)",
+                  "![](RackMultipart20240226-1-jx33px_html_f23124cbd8519a79.png)"
+              ]
+          },
+          {
+              "name": "Data Sources",
+              "example_content": [
+                  "AWS Redshift",
+                  "PostgreSQL",
+                  "Web Analytics (Google)"
+              ]
+          }
+          ],
+      "data_function":""
+    },
+  {
+      "name": "Data Volume and Update Frequency",
+      "example_content": "The volume of data processed by the Customer 360 Data Product depends on the scale and scope of the organization. Factors influencing data volume include the customer base size, transaction frequency, and engagement levels. Update frequencies vary based on the source but are optimized for real-time updates to ensure the most current customer profiles.",
+      "data_function": ""
+  },
+  {
+      "name": "System Requirements and Dependencies",
+      "example_content": "" ,
+      "subsection": [
+          {
+              "name": "Apache Spark Cluster:",
+              "example_content": "",
+              "subsection": [
+                  {
+                    "name": "Number of Nodes:",
+                    "example_content": "3 nodes"
+                  },
+                  {
+                    "name": "Node Type:",
+                    "example_content": "High-memory instances (e.g., r5.4xlarge) with at least 16 CPU cores and 64 GB RAM per node."
+                  },
+                  {
+                    "name": "Total CPU Cores:",
+                    "example_content": " 48 cores"
+                  },
+                  {
+                    "name": "Total RAM:",
+                    "example_content": "192 GB"
+                  }]
+        },
+        {
+              "name": "Apache Kafka CLuster",
+              "example_content":"",
+              "subsection": [
+                  {
+                    "name": "Number of Brokers:",
+                    "example_content": "3 brokers (for redundancy and fault tolerance)"
+                  },
+                  {
+                    "name": "Broker Instance Type:",
+                    "example_content": "Instance type with at least 8 CPU cores and 32 GB RAM per broker."
+                  },
+                  {
+                    "name": "Total CPU Cores:",
+                    "example_content": "24 cores"
+                  },
+                  {
+                    "name": "Total RAM:",
+                    "example_content": "96 GB"
+                  }]
+        },
+        {
+              "name": "PostgreSQL Database",
+              "example_content": "",
+              "subsection":[
+                  {
+                    "name": "Instance Type:",
+                    "example_content": "High-memory instance (e.g., r5.xlarge) with at least 4 CPU cores and 16 GB RAM."
+                  },
+                  {
+                    "name": "Storage:",
+                    "example_content": "Enough storage capacity to handle the \"orders_enriched_data\" dataset"
+                  }]
+        }],
+      "data_function":""
+  },
+  {
+      "name": "Security and Compliance Considerations",
+      "example_content": "Following are the Security and Compliance Measures:",
+      "subsection": [
+          {
+              "name": "Encryption:",
+              "example_content": "Data encryption in transit and at rest to ensure the confidentiality and integrity of customer information."
+          },
+          {
+              "name": "Access Control:",
+              "example_content": "Role-based access control mechanisms to restrict data access based on user roles."
+          },
+          {
+              "name": "Audit Trails:",
+              "example_content": "Logging and monitoring features to track user activities and changes to customer profiles."
+          },
+          {
+              "name": "Compliance Consideration\nData Privacy Regulations:",
+              "example_content": "Adherence to data protection regulations such as GDPR, HIPAA, or industry-specific compliance standards."
+          },
+          {
+              "name": "Data Retention Policies:",
+              "example_content": "Implementation of policies for the secure storage and responsible disposal of customer data."
+          }],
+      "data_function": ""
+  },
+  {
+      "name": "Built Using",
+      "example_content":"Following are the technologies used:",
+      "subsection": [
+          {
+              "name": "Python:",
+              "example_content": "For data processing, transformation, and integration tasks."
+          },
+          {
+              "name": "Apache Kafka:",
+              "example_content": "To enable real-time streaming of customer order events."
+          },
+          {
+              "name": "Apache Spark:",
+              "example_content": "For handling large-scale data processing efficiently."
+          },
+          {
+              "name": "PostgreSQL:",
+              "example_content": "As the primary database to store the enriched order data."
+          }],
+      "data_function": ""
+  },
+  {
+      "name": "Data Models and Algorithms",
+      "example_content":"The Customer 360 Data Product employs a sophisticated blend of data models to construct a comprehensive and unified representation of customer profiles:",
+      "subsection":[
+          {
+              "name": "Description of Data Models Used",
+              "example_content": "The Customer 360 Data Product employs a sophisticated blend of data models to construct a comprehensive and unified representation of customer profiles:"
+          },
+          {
+              "name": "Entity-Relationship Model:",
+              "example_content": "Illustrates the relationships and connections between entities, such as customers, transactions, and interactions."
+          },
+          {
+              "name": "Graph Model:",
+              "example_content": "Captures the intricate connections and dependencies between various elements, providing a visual map of customer relationships and network structures."
+          },
+          {
+              "name": "Predictive Models:",
+              "example_content": "Harnesses machine learning algorithms, including regression analysis, decision trees, and neural networks, to anticipate customer behaviors and uncover patterns."
+          },
+          {
+              "name": "Segmentation Models:",
+              "example_content": "Utilizes algorithms like k-means clustering to categorize customers based on shared characteristics, enabling targeted marketing and personalized engagement."
+          },
+          {
+              "name": "Algorithms and Analytical Methods\nPredictive Analytics:",
+              "example_content": "Applies advanced algorithms to predict customer behaviors, preferences, and trends, enabling proactive decision-making.\n- Predictive Sales\n- Predictive Churn"        
+          },
+          {
+              "name": "Clustering Algorithms:",
+              "example_content": "Utilizes k-means clustering and other algorithms to identify patterns and group customers based on similarities, facilitating tailored strategies."
+          },
+          {
+              "name": "Recommendation Algorithms:",
+              "example_content": "Implements collaborative filtering and example content-based recommendation algorithms to suggest personalized products and services.\n- Market Basket Analysis Based product recommendation\n- Marketing Channel Optimization and recommendation"
+          },
+          {
+              "name": "Descriptive Analytics:",
+              "example_content": "Leverages statistical methods and analytics tools to derive meaningful insights from historical customer data, aiding in comprehensive understanding."
+          }],
+      "data_function":""
+  },
+  {
+      "name": "Assumptions and Limitations",
+      "example_content": "Following are the measures of Assumptions and Limitations:",
+      "subsection": [
+          {
+              "name": "Assumptions\nQuality of Input Data:",
+              "example_content": "Assumes that the accuracy and reliability of models depend on the quality and completeness of the input data."
+          },
+          {
+              "name": "Predictability:",
+              "example_content": "Assumes a degree of predictability in customer behavior based on historical patterns."
+          },
+          {
+              "name": "Limitations\nProbabilistic Nature:",
+              "example_content": "Acknowledges that predictive models are inherently probabilistic and may not always accurately forecast customer behaviors."
+          },
+          {
+              "name": "Data Constraints:",
+              "example_content": "Recognizes that data models may not capture all nuances of customer interactions or external factors due to data limitations."
+          }],
+      "data_function":""
+  },
+  {
+      "name": "Model Validation and Performance Metrics",
+      "example_content":"Following are the features of Model Validation and Performance Metrics:",
+      "subsection": [
+          {
+              "name": "Model Validation\nCross-Validation:",
+              "example_content": "Utilizes techniques like k-fold cross-validation to assess model performance across different subsets of the dataset."
+          },
+          {
+              "name": "Holdout Validation:",
+              "example_content": "Reserves a portion of the dataset for validation to evaluate the model's ability to generalize to new data."
+          },
+          {
+              "name": "Performance Metrics\nAccuracy:",
+              "example_content": "Measures the overall correctness of predictions."
+          },
+          {
+              "name": "Precision and Recall:",
+              "example_content": "Evaluates the model's ability to correctly identify positive instances and avoid false positives."
+          },
+          {
+              "name": "F1 Score:",
+              "example_content": "Strikes a balance between precision and recall, providing a holistic performance metric."
+          },
+          {
+              "name": "Area Under the Receiver Operating Characteristic (ROC) Curve (AUC-ROC):",
+              "example_content": "Assesses the trade-off between sensitivity and specificity, offering insights into the model's discriminatory power."
+          }
+      ],
+      "data_function": ""
+  },
+  {
+      "name": "User Guide\nAccessing the Data Product",
+      "example_content": "The data product can be accessed from the Data Product hub on the corresponding DataOS instance.\n![](RackMultipart20240226-1-jx33px_html_6f8c66719d8e6df9.png)",
+      "data_function": ""
+     
+  },
+  {
+      "name": "Advanced Features (for Data Scientists)",
+      "example_content": "Data Scientists can enjoy the majority of their EDA through METIS and Odin which has all the major Univariate and Multivariate analysis in place.",
+      "data_function": ""
+  },
+  {
+      "name": "Troubleshooting and Support",
+      "example_content": "If they need any support on the data product, they can reach out to Balaji at balaji.ext@tmdc.io, Aravind at aravind@tmdc.io",
+      "data_function":""
+  },
+  {
+      "name": "Data Quality Measures and Standards",
+      "example_content" : "Data quality in the Customer 360 Data Product will be rigorously measured through a multi-faceted approach encompassing various dimensions. Firstly, accuracy checks will be conducted to ensure that the information within customer profiles aligns with the actual interactions and transactions recorded across different sources. Completeness assessments will verify the presence of essential data points, promoting a holistic customer view. Timeliness will be monitored to ensure that customer profiles reflect real-time updates, allowing for timely and relevant insights. Consistency checks will be employed to identify any discrepancies or anomalies in data patterns, while uniqueness measures will ensure the absence of duplicate records. Additionally, data quality audits will be conducted regularly to address any discrepancies, and feedback loops will be established to continuously enhance data accuracy and reliability. Through these comprehensive measures, the Customer 360 Data Product aims to maintain a high standard of data quality, fostering trust in the information provided for strategic decision-making and operational efficiency.",
+      "data_function":""
+  },
+  {
+      "name": "Data Cleansing and Preprocessing Steps",
+      "example_content": "Data cleaning and preprocessing in the Customer 360 Data Product involve a meticulous process to ensure the quality and integrity of the information. Initially, raw data from diverse sources undergoes cleansing procedures, addressing missing values, outliers, and inconsistencies. Standardization and normalization techniques are applied to ensure uniformity, while duplicate records are identified and eliminated. Data preprocessing involves transforming and aggregating information to create a cohesive dataset. Advanced algorithms are employed to handle complex tasks such as imputing missing values and encoding categorical variables. Through this thorough cleaning and preprocessing pipeline, the Customer 360 Data Product guarantees a reliable foundation for robust analytics and actionable insights.",
+      "data_function":""
+  },
+  {
+      "name": "Data Governance Policies and Data Stewardship",
+      "example_content": "There are two types of Data Governance policies:",
+      "subsection": [
+          {
+              "name": "Role-Based Access Control (RBAC):",
+              "example_content": "Users see only corresponding rows and datasets based on their access role."
+          },
+          {
+              "name": "Discretionary Access Control (DAC):",
+              "example_content": "Currently, DAC (full access) is granted to:\nFor RBAC:\n\n| **Users**|\n| --- |\n| Data Stewards |\n| Data Producers (of each Data Product) |"
+          },
+          {
+              "name": "For RBAC:",
+              "example_content": "- Certain Personally Identifiable Information (PII) is masked for each category.\n\n| **Category**| **Masked Attributes**|\n| --- | --- |\n| Marketing Team | Age (Range), Salary (Range) |\n| Data Consumer | All PII information masked through SHA256 |"
+  
+          }],
+      "data_function":""
+  },
+  {
+      "name": "Data Steward Responsibilities",
+      "example_content": "Clearly define roles and responsibilities for data ownership.\n- Appoint data stewards responsible for overseeing data quality and integrity.",
+      "data_function":""
+  },
+  {
+      "name": "Data Lineage and History Tracking",
+      "example_content": "In DataOS, the data lineage of the Customer 360 product can be accessed through the Hera application within DataOS. The change history and history tracking are possible through METIS.\n\n![](RackMultipart20240226-1-jx33px_html_722cde6d86f946ad.png)",
+      "data_function":""
+  },
+  {
+      "name": "Customer 360 Lens",
+      "example_content": "The customer 360 Lens is built by connecting the entities mentioned above as shown in the diagram below.\n\n![](RackMultipart20240226-1-jx33px_html_336a4472e11bdda1.png)\n\nThe definition of the lens can be found in the following URL\n\n[https://github.com/StacknexusDatanators/retail-accelerator/blob/main/dataos_yamls/lens/c360_solution_accelerator.yaml](https://github.com/StacknexusDatanators/retail-accelerator/blob/main/dataos_yamls/lens/c360_solution_accelerator.yaml)",
+      "data_function":""
+  },
+  {
+      "name": "Integration and Deployment",
+      "example_content": "", 
+      "subsection": [{
+          "name": "Integration with Other Systems (for Data Engineers)",
+          "example_content": "The data can be integrated with any other data system through various methods.\n\n- Spark based Flare jobs where the raw datasets can be integrated or migrated to their destination Flare is a Data Migration Engine Built on top of Apache Spark. A typical Flare YAML has the following Structure,\n\n![](RackMultipart20240226-1-jx33px_html_6f728c6c69669c6d.png)\n\nYou can find more information about flare in the following link\n\n([https://dataos.info/resources/stacks/flare/#syntax-of-flare-yaml-configuration](https://dataos.info/resources/stacks/flare/#syntax-of-flare-yaml-configuration))\n\nHere is an example flare job for an enriched orders dataset that can be built from the Customer360 Data Product\n\n![](RackMultipart20240226-1-jx33px_html_9e984c0407ffaaeb.png)\n\n![](RackMultipart20240226-1-jx33px_html_c2f08b59a5f1323e.png)\n\nYou can access the source YAMLs in the following github repository.\n\n[https://github.com/StacknexusDatanators/retail-accelerator](https://github.com/StacknexusDatanators/retail-accelerator)"
+          }],
+      "data_function":""
+  },
+  {
+      "name": "Scalability and Performance Considerations",
+      "example_content": "Scalability and performance considerations in the Customer 360 Data Product involve optimizing infrastructure to accommodate growing datasets and user demands. Implementing scalable architecture ensures responsiveness, allowing the platform to efficiently handle increased data volume, user interactions, and evolving analytics needs, fostering a seamless and high-performance experience.",
+      "data_function": ""
+  },
+  {
+      "name": "Backup and Disaster Recovery Procedures",
+      "example_content": "Backup and disaster recovery strategies for the Customer 360 Data Product are pivotal for safeguarding against unforeseen events. Regular backups of critical data are conducted to secure against accidental deletions, system failures, or cyber threats. An effective disaster recovery plan outlines procedures for swift data restoration, minimizing downtime. Off-site data storage and redundancy measures are implemented to enhance resilience. Periodic testing of recovery procedures ensures their efficacy, guaranteeing that the Customer 360 Data Product can swiftly recover from disruptions, maintain data integrity, and resume operations, thereby safeguarding against potential data loss or system outages.",
+      "data_function": ""
+  },
+  {
+      "name": "Use Cases and Scenarios",
+      "example_content":"Typical Use Cases for Business Analysis and Data Scientists:",
+      "subsection": [
+          {
+              "name": "Personalized Marketing Campaigns:",
+              "example_content": "Analyze customer preferences and behavior to tailor marketing campaigns for increased engagement and conversion rates."
+          },
+          {
+              "name": "Customer Segmentation:",
+              "example_content": "Utilize segmentation models to categorize customers based on demographics and behaviors, optimizing targeted marketing strategies."
+          },
+          {
+              "name": "Churn Prediction and Retention Strategies:",
+              "example_content": "Implement predictive analytics to identify at-risk customers and devise proactive retention strategies, reducing churn rates."
+          },
+          {
+              "name": "Sales Performance Analysis:",
+              "example_content": "Evaluate sales data to identify top-performing products, optimize pricing strategies, and enhance overall sales performance."
+          },
+          {
+              "name": "Customer Satisfaction Analysis:",
+              "example_content": "Analyze customer feedback and support interactions to assess satisfaction levels and improve customer service strategies."
+          },
+          {
+              "name": "Advanced Analytical Scenarios for Data Scientists\nPredictive Modeling for Revenue Forecasting:",
+              "example_content": "Develop and deploy predictive models to forecast revenue based on historical data and market trends"
+          },
+          {
+              "name": "Anomaly Detection for Fraud Prevention:",
+              "example_content": "Implement advanced anomaly detection algorithms to identify unusual patterns indicative of potential fraud in transactions."
+          },
+          {
+              "name": "Natural Language Processing (NLP) for Customer Sentiment Analysis:",
+              "example_content": "Apply NLP techniques to analyze customer reviews and social media data for sentiment analysis, informing brand perception strategies."
+          },
+          {
+              "name": "Machine Learning Recommender Systems:",
+              "example_content": "Develop personalized recommender systems using machine learning algorithms for accurate product or example content recommendations."
+          },
+          {
+              "name": "Time Series Analysis for Demand Forecasting:",
+              "example_content": "Utilize time series analysis to forecast customer demand, optimizing inventory management and supply chain operations."
+          }],
+      "data_function": ""
+  },
+  {
+      "name": "What is a Data Product?",
+      "example_content": "A data product is a package of data, metadata, characteristics of the data, means of use, Governance, Quality.",
+      "data_function": ""
+  },
+  {
+      "name": "Data Products Spec sheet:",
+      "example_content": "A data product spec sheet will also include the usecases, scenarios and other information.Data product spec sheet encapsulates the entirety of information that users seek and consume about the product, including exhaustive details on its sources, technologies employed, use cases, and generated insights. This encompasses all relevant data-driven insights, aims, and functionalities, serving as a holistic repository of knowledge vital for understanding the product's utility from a business perspective. Data product spec sheet details use cases such as: spanning software applications, platforms, algorithms, or systems, serve to transform raw data into actionable insights, optimizing processes, enhancing user experiences, and fostering informed decision-making across diverse industries and domains.",
+      "data_function": ""
+  },
+  {
+      "name": "Interoperability:",
+      "example_content": "The Customer 360 Data Product demonstrates strong interoperability by seamlessly integrating and consolidating data from disparate sources, including AWS Redshift, PostgreSQL, and Google Web Analytics. This interoperability ensures that data from various formats and platforms can be harmoniously processed and utilized within the system. Additionally, the use of technologies such as Apache Spark, Apache Kafka, and PostgreSQL databases in the system requirements guarantees that these components interact efficiently, allowing for smooth data flow and processing across the entire ecosystem. The architectural diagrams visually represent the interconnections, showcasing the system's interoperability by illustrating how different components communicate and work together to create a unified view of customer data.",
+      "data_function": ""
+  },
+  {
+      "name": "Reliability:",
+      "example_content": "Reliability in the Customer 360 Data Product is evident through its emphasis on real-time updates and robust system configurations. The continuous and real-time updates to customer profiles ensure the accuracy and responsiveness of the system, reflecting its reliability in reflecting current customer behaviors and preferences. Specifications detailing the Compute Cluster, Apache Kafka Cluster, and PostgreSQL Database, with specific node configurations and redundancy measures, reinforce the system's reliability by ensuring high availability and fault tolerance. The architecture's fault-tolerant design, along with redundancy in clusters, contributes to the system's resilience against failures, further enhancing reliability.",
+      "data_function": ""
+  },
+  {
+      "name": "Governance:",
+      "example_content": "Governance within the Customer 360 Data Product encompasses comprehensive security measures, compliance considerations, and structured data stewardship. The product incorporates robust security measures, including encryption for data in transit and at rest, role-based access controls (RBAC), and stringent audit trails. These measures ensure data integrity, confidentiality, and regulatory compliance (such as GDPR, HIPAA) while mitigating risks associated with unauthorized access or data breaches. The delineation of governance policies like Data Lineage and History Tracking through applications like Hera and METIS showcases the system's adherence to governance principles, facilitating traceability and accountability across data lifecycles. The clear definition of data ownership roles, appointment of data stewards, and data lineage mechanisms underline the product's commitment to governance best practices.",
+      "data_function": ""
+  },
+  {
+      "name": "Discoverability:",
+      "example_content": "Discoverability within the Customer 360 Data Product is underscored by its detailed technical specifications, comprehensive documentation, and traceability mechanisms. The product's exhaustive documentation encompasses detailed information about features, data sources, system requirements, and dependencies, facilitating easy access and understanding for users involved in data analysis, engineering, and science. The inclusion of tools like Hera and METIS for data lineage and history tracking amplifies the system's discoverability, enabling users to navigate through the data ecosystem, trace data origins, and comprehend the historical evolution of customer profiles. Additionally, the RBAC and DAC policies ensure that users can access and explore data within their prescribed access policies, further enhancing discoverability while safeguarding sensitive information.",
+      "data_function": ""
+  },
+  {
+      "name": "Definition for C360",
+      "example_content": "The Customer 360 is an innovative data solution designed to provide organizations with a unified, in-depth understanding of their customer base. By consolidating data from various sources like CRM systems, sales transactions, and online interactions, the C360 creates comprehensive customer profiles, detailing demographics, purchase history, and preferences. This holistic view enables businesses to enhance customer experiences, refine marketing strategies, and make informed decisions. Tailored for data professionals, it enables seamless integration and advanced analytics, fostering personalized interactions, operational efficiency, and lasting customer loyalty. The C360 stands as a powerful tool leveraging data for precise insights and strategic advantage.",
+      "data_function":""
+  },
+  {
+      "name": "DATA SCHEMAS",
+      "example_content":"Following are the schemas for the given tables:",
+      "subsection": [
+          {
+              "name": "Product (Redshift) - Updated Weekly",
+              "example_content": "| **Product (Redshift) - Updated Weekly**|\n| --- |\n| **Column Name** | **Description** | **Type** |\n| sku_id | Product SKU | VARCHAR |\n| product_id | Product ID | VARCHAR |\n| product_name | Product Name | VARCHAR |\n| product_category | Product Category | VARCHAR |\n| product_subcategory | Product Subcategory | VARCHAR |\n| brand_id | Brand ID | VARCHAR |\n| product_colour | Product Colour | VARCHAR |\n| product_size | Product Size | VARCHAR |\n| list_price | List Price | DOUBLE |\n| sale_price | Sale Price | DOUBLE |\n| launched_ts | Time when launched | TIMESTAMP |"
+          },
+          {
+              "name": "Brand (Redshift) - Updated Monthly",
+              "example_content": "| **Brand (Redshift) - Updated Monthly**|\n| --- |\n| **Column Name**| **Description**| **Type**|\n| brand_id | Brand ID | VARCHAR |\n| brand_name | Brand Name | VARCHAR |\n| parent_company | Parent Company | VARCHAR |\n| description | Description | VARCHAR |\n| brand_type | Brand Type | VARCHAR |\n| website | Website | VARCHAR |\n| founded_year | Founded Year | VARCHAR |\n| headquarters | Head Quarters Address | VARCHAR |"
+          },
+          {
+              "name": "Order Line Item (PostgreSQL) - Updated in real time",
+              "example_content": "| **Order Line Item (PostgreSQL) - Updated in real time**|\n| --- |\n| **Column Name**| **Description**| **Type**|\n| order_li_id | Order Line ID | VARCHAR |\n| order_id | Order ID | VARCHAR |\n| product_id | Product ID | VARCHAR |\n| qty | Quantity | INT |\n| **Orders (PostgreSQL)**|\n| **Column Name**| **Description**| **Type**|\n| Order_id | Order ID | VARCHAR |\n| Customer_id | Customer ID | VARCHAR |\n| Order_state | Order Date | TIMESTAMP |\n| Order_delivery_date | Order Delivery Date | TIMESTAMP |\n| Discounted_amount | Discounted Amount | DOUBLE |\n| Shipping_amount | Shipping Amount | DOUBLE |\n| Total_amount | Total Amount | DOUBLE |\n| Payment_method | Payment Method | VARCHAR |\n| Billing_address | Billing Address | VARCHAR |\n| Shipping_address | Shipping Address | VARCHAR |\n| Transaction_id | Transaction ID | VARCHAR |"
+          },
+          {
+              "name": "Transactions (PostgreSQL) - Updated in Real time",
+              "example_content": "| **Transactions (PostgreSQL) - Updated in Real time**|\n| --- |\n| **Column Name**| **Description**| **Type**|\n| transaction_id | Transaction ID | VARCHAR |\n| order_id | Order ID | VARCHAR |\n| amount | Amount | DOUBLE |\n| payment_method | Payment Method | VARCHAR |\n| transaction_ts | Transaction Time Stamp | TIMESTAMP |"
+          },
+          {
+              "name": "Customer (Red Shift) - Updated Daily",
+              "example_content": "| **Customer (Red Shift) - Updated Daily**|\n| --- |\n| **Column Name**| **Description**| **Type**|\n| customer_id | Customer ID | VARCHAR |\n| first_name | First Name | VARCHAR |\n| last_name | Last Name | VARCHAR |\n| gender | Gender | VARCHAR |\n| phone_number | Phone Number | VARCHAR |\n| email_address | Email Address | VARCHAR |\n| date_of_birth | Date of Birth | TIMESTAMP |\n| age | Age | INT |\n| education_level | Education Level | VARCHAR |\n| marital_status | Marital Status | VARCHAR |\n| no._of_children | Number of Children | INT |\n| registration_date | Registration Date | TIMESTAMP |\n| occupation | Occupation | VARCHAR |\n| hobbies | Hobbies | VARCHAR |\n| annual_income | Annual Income | VARCHAR |\n| degree_of_loyalty | Degree of Loyalty | INT |\n| mailing_street | Mailing Street | VARCHAR |\n| city | City | VARCHAR |\n| state | State | VARCHAR |\n| country | Country | VARCHAR |\n| zipcode | Zip Code | VARCHAR |"
+          }],
+      "data_function": ""
+  },
+  {
+      "name": "Security and Compliance",
+      "example_content" :"By integrating security measures and aligning with stringent compliance standards, the Customer 360 data product not only guarantees data confidentiality and integrity but also ensures ethical data handling practices. This comprehensive approach to security and compliance within C360 instils confidence in users and organizations, fostering trust in the platform's capability to handle sensitive customer information responsibly and securely across its data ecosystem.",
+      "subsection":[
+          {
+              "name": "Security",
+              "example_content": "C360 employs a security framework encompassing encryption, access control, and audit trails. Through advanced encryption techniques, the product secures data both during transit and at rest, shielding sensitive customer information from unauthorized access or breaches. Access control mechanisms, such as Role-Based Access Control (RBAC) and Discretionary Access Control (DAC), limit data access based on user roles. This ensures that only authorized personnel, like Data Stewards or Data Producers, can access specific information while employing data masking techniques for sensitive Personally Identifiable Information (PII). Detailed audit trails track and monitor user activities and changes made to customer profiles, fostering accountability and enabling rapid identification of any potential security threats or unauthorized alterations. These robust security measures collectively fortify the platform against vulnerabilities and ensure the protection of customer data from various threats."
+          },
+          {
+              "name" :"Compliance",
+              "example_content": "C360 aligns with pertinent compliance standards and regulations, underscoring its commitment to data privacy, protection, and responsible data management. Adhering to stringent data privacy regulations such as GDPR and HIPAA, the product implements stringent measures to safeguard customer data, ensuring lawful and ethical handling practices. Additionally, the establishment of data retention policies within C360 ensures secure data storage and responsible disposal, in compliance with stipulated retention periods and privacy requirements. These compliance efforts not only foster customer trust by upholding data integrity and privacy but also mitigate risks associated with legal and regulatory implications."
+          }],
+      "data_function": ""
+  },
+  {
+      "name": "Example how a lens query works:",
+      "example_content": "The query exemplifies a Customer 360 lens in action, showcasing its ability to extract specific insights. By focusing on Californian customers, it retrieves details such as the total customer count and segmented profiles like \"High Spending Customers\" or \"Expecting Parents.\" This demonstrates the lens's capability to distill vast datasets into actionable customer attributes, facilitating targeted decision-making and personalized engagement strategies.",
+      "data_function": ""
+  },
+  {
+      "name": "Sample Query:",
+      "example_content": "| SELECT * FROM LENS ( SELECT \"customer.total_customers\", \"segment.segment_name\" FROM c360_solution_accelerator WHERE \"customer.state\"='California' LIMIT 50000 ) |\n| --- |",
+      "data_function": ""
+  },
+  {
+      "name": "Sample Output:",
+      "example_content": "| **customer/total_customers** COUNT | **segment/segment_name** STRING |\\n| --- | --- |\\n| 106 | High Spending Customers |\\n| 4 | Expecting Parents |\\n| 1 | Frequent Cart Abandoner |\\n| 1 | Frequent Buyers |",
+      "data_function": ""
+  },
+  {
+      "name": "Sample of a TrinoSQL based query connection:",
+      "example_content": "The Python script connects to a TrinoSQL server and queries ten records from the 'clickstream' table in the 'retail_accelerator' database. This connection uses HTTPS authentication with specific headers for access, allowing easy data retrieval from TrinoSQL servers using Python.",
+      "data_function": ""
+    },
+  {
+      "name": "Sample of TrinoSQL connection in python and query:",
+      "example_content": "| conn = connect( host=\"tcp.cheerful-maggot.dataos.app\", port=\"7432\", auth=BasicAuthentication(\"user_name\",\"YXRsYXNfZTc1YzFhNjZhZTQwNmRiN2QyZjQ1MWI\"), http_scheme=\"https\", http_headers={\"cluster-name\": \"minervac\"} ) |\n| --- |\n| Query = '''SELECT * FROM icebasedev.retail_acclerator.clickstream LIMIT 10''' |",
+      "data_function": ""
+
+  },
+  {
+      "name": "Beacon:",
+      "example_content": "The Beacon API endpoint, serves a crucial role in the realm of retail analytics. Specifically designed for churn prediction, this API retrieves data from a PostgreSQL database, a robust open-source relational database system. Operating within the DataOS platform, the API is integral to forecasting customer churn in retail scenarios. By leveraging the capabilities of PostgreSQL and the DataOS environment, it plays a key role in providing valuable insights for businesses aiming to anticipate and address customer attrition effectively.",
+      "data_function": ""
+  },
+  {
+      "name": "URL",
+      "example_content": "URL = \"https://cheerful-maggot.dataos.app/churnpred/api/v2/retail_churn_preds_data\"",
+      "data_function": ""
+  },
+  {
+      "name": "Data Quality Metrics:",
+      "example_content": "Ensuring the reliability and accuracy of data is paramount for the effectiveness of the Customer 360 Data Product. To maintain high data quality, regular checks and assessments are conducted on each dataset. Key quality metrics include:",
+      "subsection":[
+          {
+              "name": "Null Values:",
+              "example_content": "Regular checks are performed to identify and address any null values within the datasets. Null values can impact analysis and decision-making, so their presence is meticulously monitored."
+          },
+          {
+              "name": "Completeness:",
+              "example_content": "Assessments are made to ensure that each dataset is complete, with all necessary fields populated. This metric helps guarantee that there are no missing components crucial for a comprehensive understanding of customer profiles."
+          },
+          {
+              "name": "Consistency:",
+              "example_content": "Data consistency is vital for accurate analytics. Checks are conducted to identify and rectify any inconsistencies or anomalies within the datasets, maintaining a coherent and reliable dataset."
+          },
+          {
+              "name": "Timeliness:",
+              "example_content": "Timely updates are crucial for reflecting real-time changes in customer profiles. The frequency of data updates aligns with the dynamic nature of customer interactions, ensuring that the information remains current."
+          }],
+      "data_function": ""
+  },
+  {
+      "name": "Frequency of Quality Checks:",
+      "example_content": "Regular data quality checks are integrated into the operational workflow of the Customer 360 Data Product. The frequency of these checks is determined by several factors:",
+      "subsection":[
+          {
+              "name": "Source Data Updates:",
+              "example_content": "Quality checks align with the update frequency of source data. For datasets with more dynamic sources, such as real-time transactions, checks may be more frequent."
+          },
+          {
+              "name": "Business Needs:",
+              "example_content": "The frequency is also tailored to meet specific business requirements and decision-making cycles. Critical datasets may undergo more frequent assessments to support timely and accurate decision-making."
+          },
+          {
+              "name": "Data Volume and Complexity:",
+              "example_content": "Larger datasets or those with intricate relationships may require more frequent checks to maintain a high level of data quality."
+          },
+          {
+              "name": "quality checks",
+              "example_content": "By incorporating these quality metrics and aligning checks with relevant factors, the Customer 360 Data Product ensures that the information driving business decisions remains accurate, reliable, and up-to-date."
+          }],
+      "data_function": ""
+  },
+  {
+      "name": "Frequency of Quality Check on Datasets",
+      "example_content": "| Dataset | Quality Checks | Frequency | Latest Quality Score |\n| --- | --- | --- | --- |\n| Customer | Value Range Check - Age Completeness Check - Contact Information Accuracy Check - Gender | Weekly | 80% |\n| Product | Missing Values Check - Description Consistency Check - Category Uniqueness Check - Product ID | Weekly | 95% |\n| Orders | Consistency Check - Order Status Timeliness Check - Delivery Date Accuracy Check - Payment Method | Daily | 87% |\n| Web Analytics | Outliers Check - Page Views Completeness Check - User Sessions Trend Analysis - Bounce Rate | Daily | 92% |\n| Brands | Uniqueness Check - Brand ID Accuracy Check - Brand Description Consistency Check - Brand Category | Monthly | 97% |\n| Transactions | Completeness Check - Transaction Details Accuracy Check - Transaction Amount Timeliness Check - Transaction Processing Time | Daily | 91% |",
+      "data_function": ""
+  },
+  {
+      "name": "Data Update Frequency",
+      "example_content":"Frequencies of Dataset",
+      "subsection":[
+          {
+              "name": "Customer Dataset:",
+              "example_content": "Frequency: Daily \n Explanation: Customer profiles are dynamic and subject to frequent changes. Daily updates ensure that the system reflects the most recent customer interactions, preferences, and behaviors."
+          },
+          {
+              "name": "Product Dataset:",
+              "example_content": "Frequency: Weekly \n Explanation: Product information, including inventory levels, features, and pricing, may not change as rapidly as customer profiles. Weekly updates strike a balance between maintaining accuracy and minimizing unnecessary data processing."
+          },
+          {
+              "name": "Orders Dataset:",
+              "example_content": "Frequency: Real-time \n Explanation: Given the critical nature of order data, updates occur in real-time to capture transactions as they happen. This enables prompt responses to changes in customer behavior and facilitates accurate order fulfillment."
+          },
+          {
+              "name": "Transactions Dataset:",
+              "example_content": "Frequency: Daily \n Explanation: Daily updates ensure that transactional data, including payment information and order details, are current. This frequency aligns with the need for up-to-date insights into customer purchasing behavior."
+          },
+          {
+              "name": "Order Line Item Dataset:",
+              "example_content": "Frequency: Real-time \n Explanation: Real-time updates are crucial for granular details related to order line items. This ensures that any changes or modifications are immediately reflected in the dataset."
+          },
+          {
+              "name": "Web Analytics Dataset:",
+              "example_content": "Frequency: Hourly \n Explanation: Web analytics data can offer insights into customer interactions in near real-time. Hourly updates allow for quick adaptation to changing online behaviors and trends."
+          },
+          {
+              "name": "Brands Dataset:",
+              "example_content": "Frequency: Weekly \n Explanation: Brand-related information, such as partnerships or product launches, may not change as frequently. Weekly updates strike a balance between accuracy and computational efficiency."
+          }
+      ],
+      "data_function": ""
+  }
+]
