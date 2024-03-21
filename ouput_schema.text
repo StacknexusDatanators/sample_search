@@ -1,0 +1,246 @@
+{
+    "overview_of_the_data_product": {
+      "product_id": "",
+      "description": ""
+    }
+  }
+  {
+    "purpose_and_objectives": {
+      "product_id": "",
+      "description": "",
+      "purpose": "",
+      "objective": ""
+    }
+  }
+  {
+    "target_audience": {
+      "product_id": "",
+      "audience": ""
+    }
+  }
+  {
+    "document_version_and_change_history": {
+      "product_id": "",
+      "document_version_and_updates": ""
+    }
+  }
+  {
+    "product_description": {
+      "product_id": "",
+      "description": "",
+      "product_and_integration_features": "",
+      "security_and_compliance_measures": ""
+    }
+  }
+  {
+    "business_context_and_application": {
+      "product_id": "",
+      "marketing_strategies_and_operational_efficiency": ""
+    }
+  }
+  {
+    "expected_outcomes_and_benefits": {
+      "product_id": "",
+      "expected_outcomes": ""
+    }
+  }
+  {
+    "technical_specifications_of_lens": {
+      "product_id": "",
+      "lens_id": "",
+      "lens_description_and_features": ""
+    }
+  }
+  {
+    "data_sources_and_formats": {
+      "product_id": "",
+      "data_sources": "",
+      "datasets": ""
+    }
+  }
+  {
+    "data_volume_and_update_frequency": {
+      "product_id": "",
+      "data_description": ""
+    }
+  }
+  {
+    "system_requirements_and_dependencies": {
+      "product_id": "",
+      "system_configuration": "",
+      "database_specification": ""
+    }
+  }
+  {
+    "security_and_compliance_considerations": {
+      "product_id": "",
+      "security_measures": "",
+      "security_policies": "",
+      "data_privacy_measures": ""
+    }
+  }
+  {
+    "built_using": {
+      "product_id": "",
+      "cluster_details": "",
+      "database_specification": ""
+    }
+  }
+  {
+    "data_models_and_algorithms": {
+      "product_id": "",
+      "data_models": "",
+      "algorithms": ""
+    }
+  }
+  {
+    "assumptions_and_limitations": {
+      "product_id": "",
+      "description": ""
+    }
+  }
+  {
+    "model_validation_and_performance_metrics": {
+      "product_id": "",
+      "validation_techniques": "",
+      "performance_metrics": ""
+    }
+  }
+  {
+    "user_guide": {
+      "product_id": "",
+      "user_guide": ""
+    }
+  }
+  {
+    "advanced_features": {
+      "product_id": "",
+      "features": ""
+    }
+  }
+  {
+    "troubleshooting_and_support": {
+      "product_id": "",
+      "description": ""
+    }
+  }
+  {
+    "data_quality_measures_and_standards": {
+      "product_id": "",
+      "quality_measures": ""
+    }
+  }
+  {
+    "data_cleansing_and_preprocessing_steps": {
+      "product_id": "",
+      "data_models": "",
+      "data_description": ""
+    }
+  }
+  {
+    "data_governance_policies_and_data_stewardship": {
+      "product_id": "",
+      "governance_policies": "",
+      "data_steward_responsibilities": ""
+    }
+  }
+  {
+    "data_lineage_and_history_tracking": {
+      "product_id": "",
+      "data_lineage": ""
+    }
+  }
+  {
+    "integration_and_deployment": {
+      "product_id": "",
+      "integration": ""
+    }
+  }
+  {
+    "scalability_and_performance_considerations": {
+      "product_id": "",
+      "description": ""
+    }
+  }
+  {
+    "backup_and_disaster_recovery_procedures": {
+      "product_id": "",
+      "description": ""
+    }
+  }
+  {
+    "use_cases_and_scenarios": {
+      "product_id": "",
+      "description": "",
+      "purpose": ""
+    }
+  }
+  {
+    "data_schemas": {
+      "product_id": "",
+      "data_schema": ""
+    }
+  }
+  {
+    "example_lens_query": {
+      "product_id": "",
+      "lens_id": "",
+      "lens_description_and_features": ""
+    }
+  }
+  {
+    "attributes_of_robust_data_platform": {
+      "product_id": "",
+      "system_configuration": "",
+      "database_specification": "",
+      "governance_policies": "",
+      "description": ""
+    }
+  }
+  {
+    "security_and_compliance": {
+      "product_id": "",
+      "security_and_compliance_measures": "",
+      "security_policies": ""
+    }
+  }
+  {
+    "sample_of_trino_sql": {
+      "product_id": ""
+    }
+  }
+  {
+    "beacon_api_endpoint_example": {
+      "product_id": ""
+    }
+  }
+  {
+    "data_quality_metrics": {
+      "product_id": "",
+      "quality_metrics": ""
+    }
+  }
+  {
+    "frequency_of_quality_checks": {
+      "product_id": "",
+      "data_frequency": "",
+      "quality_metrics": ""
+    }
+  }
+  {
+    "frequency_of_quality_check_on_datasets": {
+      "product_id": "",
+      "data_frequency": "",
+      "quality_metrics": ""
+    }
+  }
+  {
+    "data_update_frequency": {
+      "product_id": "",
+      "data_frequency": ""
+    }
+  }
+                               
+    
+  
+                        

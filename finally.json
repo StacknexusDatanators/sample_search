@@ -48,7 +48,7 @@
     {
       "name": "Document Version and Change History",
       "example_content": "Document Version: 1.0\nLast Updated: 12-12-2023",
-      "data_function":"data_document_version"
+      "data_function":""
     },
     {
       "name": "Product Description",
@@ -83,7 +83,7 @@
               "example_content": "Stringent security measures and data governance protocols to ensure the accuracy, reliability, and privacy of customer information."
             }
           ],
-      "data_function": ""
+      "data_function": "data_product_description()"
     },  
     {
       "name": "Business Context and Application",
@@ -106,7 +106,7 @@
               "example_content": "Enabling personalized interactions and experiences by leveraging a deep understanding of individual customer preferences."
           }
       ],
-      "data_function":""
+      "data_function":"data_bussiness_context_and_application()"
   },
   {
       "name": "Expected Outcomes and Benefits",
@@ -132,7 +132,7 @@
               "name": "Enhanced Marketing ROI",
               "example_content": "Optimizing marketing strategies and campaigns for improved return on investment."
       }],
-      "data_function": ""
+      "data_function": "data_expected_outcomes_and_benefits()"
   },
   {
       "name": "Technical Specifications of Lens",
@@ -356,7 +356,7 @@
               "name": "Segmentation Models:",
               "example_content": "Utilizes algorithms like k-means clustering to categorize customers based on shared characteristics, enabling targeted marketing and personalized engagement."
           },
-          {
+          { 
               "name": "Algorithms and Analytical Methods\nPredictive Analytics:",
               "example_content": "Applies advanced algorithms to predict customer behaviors, preferences, and trends, enabling proactive decision-making.\n- Predictive Sales\n- Predictive Churn"        
           },
@@ -455,7 +455,7 @@
   },
   {
       "name": "Data Governance Policies and Data Stewardship",
-      "example_content": "There are two types of Data Governance policies:",
+      "example_content": "Follwing are the Data Governance policies:",
       "subsection": [
           {
               "name": "Role-Based Access Control (RBAC):",
@@ -553,39 +553,27 @@
       "data_function": ""
   },
   {
-      "name": "What is a Data Product?",
-      "example_content": "A data product is a package of data, metadata, characteristics of the data, means of use, Governance, Quality.",
-      "data_function": ""
-  },
-  {
-      "name": "Data Products Spec sheet:",
-      "example_content": "A data product spec sheet will also include the usecases, scenarios and other information.Data product spec sheet encapsulates the entirety of information that users seek and consume about the product, including exhaustive details on its sources, technologies employed, use cases, and generated insights. This encompasses all relevant data-driven insights, aims, and functionalities, serving as a holistic repository of knowledge vital for understanding the product's utility from a business perspective. Data product spec sheet details use cases such as: spanning software applications, platforms, algorithms, or systems, serve to transform raw data into actionable insights, optimizing processes, enhancing user experiences, and fostering informed decision-making across diverse industries and domains.",
-      "data_function": ""
-  },
-  {
-      "name": "Interoperability:",
-      "example_content": "The Customer 360 Data Product demonstrates strong interoperability by seamlessly integrating and consolidating data from disparate sources, including AWS Redshift, PostgreSQL, and Google Web Analytics. This interoperability ensures that data from various formats and platforms can be harmoniously processed and utilized within the system. Additionally, the use of technologies such as Apache Spark, Apache Kafka, and PostgreSQL databases in the system requirements guarantees that these components interact efficiently, allowing for smooth data flow and processing across the entire ecosystem. The architectural diagrams visually represent the interconnections, showcasing the system's interoperability by illustrating how different components communicate and work together to create a unified view of customer data.",
-      "data_function": ""
-  },
-  {
-      "name": "Reliability:",
-      "example_content": "Reliability in the Customer 360 Data Product is evident through its emphasis on real-time updates and robust system configurations. The continuous and real-time updates to customer profiles ensure the accuracy and responsiveness of the system, reflecting its reliability in reflecting current customer behaviors and preferences. Specifications detailing the Compute Cluster, Apache Kafka Cluster, and PostgreSQL Database, with specific node configurations and redundancy measures, reinforce the system's reliability by ensuring high availability and fault tolerance. The architecture's fault-tolerant design, along with redundancy in clusters, contributes to the system's resilience against failures, further enhancing reliability.",
-      "data_function": ""
-  },
-  {
-      "name": "Governance:",
-      "example_content": "Governance within the Customer 360 Data Product encompasses comprehensive security measures, compliance considerations, and structured data stewardship. The product incorporates robust security measures, including encryption for data in transit and at rest, role-based access controls (RBAC), and stringent audit trails. These measures ensure data integrity, confidentiality, and regulatory compliance (such as GDPR, HIPAA) while mitigating risks associated with unauthorized access or data breaches. The delineation of governance policies like Data Lineage and History Tracking through applications like Hera and METIS showcases the system's adherence to governance principles, facilitating traceability and accountability across data lifecycles. The clear definition of data ownership roles, appointment of data stewards, and data lineage mechanisms underline the product's commitment to governance best practices.",
-      "data_function": ""
-  },
-  {
-      "name": "Discoverability:",
-      "example_content": "Discoverability within the Customer 360 Data Product is underscored by its detailed technical specifications, comprehensive documentation, and traceability mechanisms. The product's exhaustive documentation encompasses detailed information about features, data sources, system requirements, and dependencies, facilitating easy access and understanding for users involved in data analysis, engineering, and science. The inclusion of tools like Hera and METIS for data lineage and history tracking amplifies the system's discoverability, enabling users to navigate through the data ecosystem, trace data origins, and comprehend the historical evolution of customer profiles. Additionally, the RBAC and DAC policies ensure that users can access and explore data within their prescribed access policies, further enhancing discoverability while safeguarding sensitive information.",
-      "data_function": ""
-  },
-  {
-      "name": "Definition for C360",
-      "example_content": "The Customer 360 is an innovative data solution designed to provide organizations with a unified, in-depth understanding of their customer base. By consolidating data from various sources like CRM systems, sales transactions, and online interactions, the C360 creates comprehensive customer profiles, detailing demographics, purchase history, and preferences. This holistic view enables businesses to enhance customer experiences, refine marketing strategies, and make informed decisions. Tailored for data professionals, it enables seamless integration and advanced analytics, fostering personalized interactions, operational efficiency, and lasting customer loyalty. The C360 stands as a powerful tool leveraging data for precise insights and strategic advantage.",
-      "data_function":""
+    "name": "Attributes of a Robust Data Platform",
+    "example_content": "This collection highlights the essential qualities of a robust data platform, discussing aspects such as interoperability, reliability, governance, discoverability, and functionality. Together, these attributes contribute to the creation of a comprehensive, accessible, secure, dependable, and fully featured platform for managing and deriving insights from data.",
+    "subsection": [
+      {
+        "name": "Interoperability:",
+        "example_content": "The data platform demonstrates strong interoperability by smoothly integrating and consolidating data from disparate sources, including AWS Redshift, PostgreSQL, and Google Web Analytics. Such interoperability ensures that data from various formats and platforms can be processed and utilized harmoniously within the system. Furthermore, the utilization of technologies such as Apache Spark, Apache Kafka, and PostgreSQL databases in the system requirements guarantees efficient component interaction, promoting seamless data flow and processing throughout the whole ecosystem."
+      },
+      {
+        "name": "Reliability:",
+        "example_content": "Reliability is evident in the data platform through its concentration on real-time updates and solid system configurations. Continuous and real-time updates to data ensure accuracy and responsiveness, indicating the system's reliability in mirroring current trends and user behaviors. Technical specifications detailing the Compute Cluster, Apache Kafka Cluster, and PostgreSQL Database, with particular node configurations and redundancies, bolster reliability by guaranteeing high availability and fault tolerance. The system's fault-tolerant design, combined with cluster redundancies, increases its resilience against failures, further enhancing reliability."
+      },
+      {
+        "name": "Governance:",
+        "example_content": "Within the data platform, governance covers comprehensive security measures, compliance concerns, and organized data stewardship. The platform implements robust security measures, comprising encryption for data in transit and at rest, role-based access controls (RBAC), and meticulous audit trails. These precautions ensure data integrity, privacy, and regulatory conformity (such as GDPR, HIPAA), minimizing risks linked to unapproved access or data breaches. Defining governance policies, such as Data Lineage and History Tracking through applications like Hera and METIS, exhibits the system's alignment with good governance practices, facilitating transparency and accountability throughout data lifecycles. Clearly established data ownership roles, designated data stewards, and data lineage mechanisms demonstrate the platform's commitment to best governance practices."
+      },
+      {
+        "name": "Discoverability:",
+        "example_content": "Discoverability within the data platform shines through its elaborate technical specifications, extensive documentation, and tracing facilities. All-encompassing documentation includes detailed feature descriptions, data source summaries, system prerequisites, and dependency explanations, simplifying user access and comprehension. Including tools like Hera and METIS for data lineage and history tracking improves discoverability, permitting users to traverse the data landscape, track data provenance, and grasp the historical development of analyzed subjects. Lastly, RBAC and discretionary access control (DAC) policies ensure that users can acquire and examine data within preset access restrictions, boosting discoverability while protecting delicate information."
+      }
+    ],
+    "data_function": ""
   },
   {
       "name": "DATA SCHEMAS",
@@ -628,40 +616,41 @@
       "data_function": ""
   },
   {
-      "name": "Example how a lens query works:",
-      "example_content": "The query exemplifies a Customer 360 lens in action, showcasing its ability to extract specific insights. By focusing on Californian customers, it retrieves details such as the total customer count and segmented profiles like \"High Spending Customers\" or \"Expecting Parents.\" This demonstrates the lens's capability to distill vast datasets into actionable customer attributes, facilitating targeted decision-making and personalized engagement strategies.",
-      "data_function": ""
+    "name": "Example of a lens query",
+    "example_content": "The query showcases the power of a Customer 360 lens, revealing its capacity to draw specific insights. By focusing on Californian customers, it gathers essential details such as the total customer count and segmented categories like 'High Spending Customers' or 'Expecting Parents.' This highlights the lens's effectiveness in breaking down expansive datasets into manageable customer attributes, thus informing targeted choices and crafting personalized engagement plans.",
+    "subsections": [
+      {
+        "name": "Sample Query",
+        "example_content": "SELECT * FROM LENS (\n  SELECT 'customer.total_customers', 'segment.segment_name' FROM c360_solution_accelerator WHERE 'customer.state'='California' LIMIT 50000\n)"
+      },
+      {
+        "name": "Sample Output",
+        "example_content": "| customer/total_customers | segment/segment_name          | \\n| -------------- | ---------------------------- | \\n| 106            | High Spending Customers      | \\n| 4              | Expecting Parents             | \\n| 1              | Frequent Cart Abandoner      | \\n| 1              | Frequent Buyers              |"
+      }
+    ],
+    "data_function": ""
   },
   {
-      "name": "Sample Query:",
-      "example_content": "| SELECT * FROM LENS ( SELECT \"customer.total_customers\", \"segment.segment_name\" FROM c360_solution_accelerator WHERE \"customer.state\"='California' LIMIT 50000 ) |\n| --- |",
-      "data_function": ""
+    "name": "Sample of a TrinoSQL",
+    "example_content": "The Python script establishes a connection to a TrinoSQL server and fetches ten rows from the 'clickstream' table in the 'retail_accelerator' database. The connection employs HTTPS authentication with particular headers for access, facilitating easy data extraction from TrinoSQL servers using Python scripts.",
+    "subsections": [
+      {
+        "name": "TrinoSQL Connection and Query Example in Python",
+        "example_content": "conn = connect(\n  host=\"tcp.cheerful-maggot.dataos.app\",\n  port=\"7432\",\n  auth=BasicAuthentication(\"user_name\",\"YXRsYXNfZTc1YzFhNjZhZTQwNmRiN2QyZjQ1MWI\"),\n  http_scheme=\"https\",\n  http_headers={\"cluster-name\": \"minervac\"}\n)\n--- \nQuery = '''SELECT * FROM icebasedev.retail_accelerator.clickstream LIMIT 10'''"
+      }
+    ],
+    "data_function": ""
   },
   {
-      "name": "Sample Output:",
-      "example_content": "| **customer/total_customers** COUNT | **segment/segment_name** STRING |\\n| --- | --- |\\n| 106 | High Spending Customers |\\n| 4 | Expecting Parents |\\n| 1 | Frequent Cart Abandoner |\\n| 1 | Frequent Buyers |",
-      "data_function": ""
-  },
-  {
-      "name": "Sample of a TrinoSQL based query connection:",
-      "example_content": "The Python script connects to a TrinoSQL server and queries ten records from the 'clickstream' table in the 'retail_accelerator' database. This connection uses HTTPS authentication with specific headers for access, allowing easy data retrieval from TrinoSQL servers using Python.",
-      "data_function": ""
-    },
-  {
-      "name": "Sample of TrinoSQL connection in python and query:",
-      "example_content": "| conn = connect( host=\"tcp.cheerful-maggot.dataos.app\", port=\"7432\", auth=BasicAuthentication(\"user_name\",\"YXRsYXNfZTc1YzFhNjZhZTQwNmRiN2QyZjQ1MWI\"), http_scheme=\"https\", http_headers={\"cluster-name\": \"minervac\"} ) |\n| --- |\n| Query = '''SELECT * FROM icebasedev.retail_acclerator.clickstream LIMIT 10''' |",
-      "data_function": ""
-
-  },
-  {
-      "name": "Beacon:",
-      "example_content": "The Beacon API endpoint, serves a crucial role in the realm of retail analytics. Specifically designed for churn prediction, this API retrieves data from a PostgreSQL database, a robust open-source relational database system. Operating within the DataOS platform, the API is integral to forecasting customer churn in retail scenarios. By leveraging the capabilities of PostgreSQL and the DataOS environment, it plays a key role in providing valuable insights for businesses aiming to anticipate and address customer attrition effectively.",
-      "data_function": ""
-  },
-  {
-      "name": "URL",
-      "example_content": "URL = \"https://cheerful-maggot.dataos.app/churnpred/api/v2/retail_churn_preds_data\"",
-      "data_function": ""
+    "name": "Beacon API Endpoint Example",
+    "example_content": "The Beacon API endpoint holds immense significance in retail analytics, specifically developed for predicting churn. Retrieving data from a PostgreSQL database, it operates within the DataOS platform. Crucial for anticipating customer churn in retail situations, this API combines PostgreSQL's strengths with DataOS' environment. Its contribution lies in furnishing valuable insights assisting businesses in proactively addressing customer attrition.",
+    "subsections": [
+      {
+        "name": "API Endpoint URL",
+        "example_content": "URL = \"https://cheerful-maggot.dataos.app/churnpred/api/v2/retail_churn_preds_data\""
+      }
+    ],
+    "data_function": ""
   },
   {
       "name": "Data Quality Metrics:",
