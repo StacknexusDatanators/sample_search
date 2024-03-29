@@ -9,3 +9,4 @@ This repository contains files related to the C360 sample search project. Below 
 5. **test1.html**: HTML file which we were using intially for topic extraction.
 6. **Html_parse.ipynb**: Main Jupyter notebook for extracting topics and running thorugh OpenAI.
 7. **Sample_html.ipynb**: testing Jupyter notebook demonstrating HTML extraction.
+8. **JSON_Structure**: Folder with all the individual json files
