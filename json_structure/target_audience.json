@@ -1,0 +1,7 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "audience_version": "", //<string>, <version of the target audience>
+    "audience": "", //<string>, <stakeholders, roles, user segments etc.>
+    "last_updated_at": "", //# <date>, <date last updated>
+    "description": "" //<string>, <target audience details, etc.>
+}

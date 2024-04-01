@@ -1,0 +1,10 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "description": "", //<string>, <description for data product>
+    "version": "", //<string>, <active version of the data product – demo or staging or live environment>
+    "last_updated_at": "", // <date>, <date last updated>
+    "release_notes": "" //<string>, <release notes about the summary of changes, new feature's introduction, etc.> 
+}
+
+
+  

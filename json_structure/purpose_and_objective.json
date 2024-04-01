@@ -1,0 +1,6 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "description": "", //<string>, <description for data product>
+    "purpose": "", //<string>, <purpose of the data product>
+    "last_updated_at": "" //# <date>, <date last updated>
+}

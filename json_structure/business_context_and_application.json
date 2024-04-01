@@ -1,0 +1,8 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "usecase_name": "", //<string>, <title for the usecase>
+    "usecase_description": "", //<string>, <detailed desc of the usecase (business)>
+    "business_function": "", //<string>, <department that is catered to – ops, marketing, etc.>
+    "business_application": "", //<string>, <desc about the business implications, etc.>
+    "description": "" //<string>, <description of the business context, data product application, etc.>
+}

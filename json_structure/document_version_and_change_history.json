@@ -1,0 +1,9 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "version_history": [{
+        "version_name": "", //<string>, <name of the version>
+        "version_number": "" //<string>, <version number>
+    }],
+    "date_updated_at": "", //# <date>, <documentation updated date>
+    "current_version": "" //<string>, <latest version of the documentation>
+}
