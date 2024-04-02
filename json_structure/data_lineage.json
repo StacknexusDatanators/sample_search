@@ -1,0 +1,28 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "data_assets": [
+    {
+        "asset_id": "", //<string>, <identifier for the data asset>
+        "asset_name": "", //<string>, <name of the data asset>
+        "asset_type": "", //<string>, <type of the data asset>
+        "description": "", //<string>, <description of the data asset>
+        "source": "", //<string>, <source of the data asset>
+        "destination": "", //<string>, <destination of the data asset>
+        "transformation": "", //<string>, <transformation applied to the data asset>
+        "transformation_type": "", //<string>, <type of transformation applied>
+        "dependency": [ //<array>, <list of dependencies>
+            {
+                "dependent_asset_id": "", //<string>, <identifier of the dependent data asset>
+                "dependent_asset_name": "", //<string>, <name of the dependent data asset>
+                "dependency_type": "", //<string>, <type of dependency>
+                "dependency_condition": "" //<string>, <dependency condition>
+            }
+        ],
+        "metadata": {
+            "created_by": "", //<string>, <creator of the data asset>
+            "created_at": "", //<string>, <creation date of the data asset>
+            "last_updated_by": "", //<string>, <last updater of the data asset>
+            "last_updated_at": "" //<string>, <last updated date of the data asset>
+        }
+    }
+]}

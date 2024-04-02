@@ -1,0 +1,17 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "datasets": [{
+        "dataset_name": "", //<string>, <name of the dataset>
+        "sources": [{ //<array>, <list of all sources for the dataset>
+            "data_source": "", //<string>, <ID of the data_source depot>
+            "data_source_desc": "", //<string>, <desc of the data_source>
+            "dataset_desc": "", //<string>, <description of the dataset>
+            "format": "", //<string>, <the format of the dataset>
+            "last_updated_at": "", //# <date>, <date last updated>
+            "data_accessibility": "" //<string>, <how is the data accessible – file/api/, etc.>
+        }]
+    }],
+    "technologies_used": [ //<array>, <list of all the technologies used>
+        ""
+    ]
+}

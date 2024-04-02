@@ -428,20 +428,25 @@
       "data_function": ""
   },
   {
-      "name": "User Guide\nAccessing the Data Product",
-      "example_content": "The data product can be accessed from the Data Product hub on the corresponding DataOS instance.\n![](RackMultipart20240226-1-jx33px_html_6f8c66719d8e6df9.png)",
+    "user_guide": {
+      "name": "User Guide",
+      "example_content": "Details for user guide, Advanced Features and troubleshooting and support",
+      "subsections": [
+        {
+          "name": "Accessing the Data Product",
+          "example_content": "The data product can be accessed from the Data Product hub on the corresponding DataOS instance.\n![](RackMultipart20240226-1-jx33px_html_6f8c66719d8e6df9.png)"
+        },
+        {
+          "name": "Advanced Features (for Data Scientists)",
+          "example_content": "Data Scientists can enjoy the majority of their EDA through METIS and Odin which has all the major Univariate and Multivariate analysis in place."
+        },
+        {
+          "name": "Troubleshooting and Support",
+          "example_content": "If they need any support on the data product, they can reach out to Balaji at balaji.ext@tmdc.io, Aravind at aravind@tmdc.io"
+        }
+      ],
       "data_function": ""
-     
-  },
-  {
-      "name": "Advanced Features (for Data Scientists)",
-      "example_content": "Data Scientists can enjoy the majority of their EDA through METIS and Odin which has all the major Univariate and Multivariate analysis in place.",
-      "data_function": ""
-  },
-  {
-      "name": "Troubleshooting and Support",
-      "example_content": "If they need any support on the data product, they can reach out to Balaji at balaji.ext@tmdc.io, Aravind at aravind@tmdc.io",
-      "data_function":""
+    }
   },
   {
       "name": "Data Quality Measures and Standards",

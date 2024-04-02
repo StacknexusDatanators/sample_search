@@ -1,33 +1,33 @@
+
 {
-    "product_id": "", //<string>, <unique identifier for data product>
-    "security_features": [ ""], //<string>, <desc about security features in the data product>]
-    "compliance_features": "", //<string>, <desc about compliance features in the data product>
-    "data_compliance": "", //<string>, <desc about data compliance features in the data product>
-    "security_compliance": "", //<string>, <desc about security compliance features in the data product>
-    "description": "",//<string>,<description of the system, etc.>,
-    "encryption": {"encryption_algorithm": "", //<string>
-                    "encryption_key_management": "", //<string>
-                "data_encryption_at_rest": "", //<boolean>
-                "data_encryption_in_transit": "" //<boolean>
-            },
-    "authentication": {
-        "authentication_methods": ["" //<string>
-    ],
-        "multi-factor_authentication": "" //<boolean>
-      },
-    "audit_trail": {
-        "audit_logging_enabled": "", // <boolean>
-        "audit_logs_retention_period": "" //<string>
-      },
-    "access_control": {
-        "access_control_list": "",//<string>
-        "role-based_access_control": "", //<boolean>
-        "attribute-based_access_control": "" //<boolean>
-      },
-    "data_privacy": {
-        "gdpr_compliance": "", //<boolean>
-        "data_deletion_capability": "", //<boolean>
-        "data_subject_access_requests": "" //<boolean>
-        }
-    }
-    
+  "product_id": "", //<string>, <unique identifier for data product>,
+  "security_features": [ ""], //<string>, <desc about security features in the data product>,
+  "compliance_features": "", //<string>, <desc about compliance features in the data product>,
+  "data_compliance": "", //<string>, <desc about data compliance features in the data product>,
+  "security_compliance": "", //<string>, <desc about security compliance features in the data product>,
+  "description": "",//<string>,<description of the system, etc.>,
+  "encryption": {
+      "encryption_algorithm": "", //<string>, <encryption algorithm used>,
+      "encryption_key_management": "", //<string>, <description of key management>,
+      "data_encryption_at_rest": "", //<boolean>, <whether data is encrypted at rest>,
+      "data_encryption_in_transit": "" //<boolean>, <whether data is encrypted in transit>
+  },
+  "authentication": {
+    "authentication_methods": [""], //<array of strings>, <authentication methods used>
+    "multi-factor_authentication": "" //<boolean>, <whether multi-factor authentication is enabled>
+ },
+  "audit_trail": {
+      "audit_logging_enabled": "", // <boolean>, <whether audit logging is enabled>,
+      "audit_logs_retention_period": "" //<string>, <retention period for audit logs>
+  },
+  "access_control": {
+      "access_control_list": "",//<string>, <description of access control list>,
+      "role-based_access_control": "", //<boolean>, <whether role-based access control is enabled>,
+      "attribute-based_access_control": ""//<boolean>, <whether attribute-based access control is enabled>
+  },
+  "data_privacy": {
+      "gdpr_compliance": "", //<boolean>, <whether GDPR compliance is maintained>,
+      "data_deletion_capability": "", //<boolean>, <whether data deletion capability is provided>,
+      "data_subject_access_requests": "" //<boolean>, <whether data subject access requests are supported>
+  }
+}

@@ -1,29 +1,29 @@
+
 {
-    "product_id": "", //<string>
-    "policies": [
-        {"policy_id":"", //<string>
-         "policy_name": "", //<string>
-         "policy_type": "masking/filter", //<string>
-         "dataset_id": "", //<string>
-         "field": "", // <string>
-         "encryption": false, // <boolean>
-         "data_steward": "" //<string>
-         }
-    ],
-    "data_classification": "", //<string>
-    "data_retention_policy": {
-      "retention_period": "", //<string>
-      "archival_policy": "" //<string>
-    },
-    "access_control": {
-      "authentication_required": "", //<boolean>
-      "authorization_required": "", //<boolean>
-       },
-     "data_privacy": {
-      "gdpr_compliance": "", //<boolean>
-      "pii_handling": "", //<boolean>
-      "anonymization_techniques": ["" //<string>
-    ]
-    }
+  "product_id": "", //<string>, <unique identifier for data product>
+  "policies": [
+      {
+          "policy_id": "", //<string>, <unique identifier for the policy>,
+          "policy_name": "", //<string>, <name of the policy>,
+          "policy_type": "masking/filter", //<string>, <type of policy>,
+          "dataset_id": "", //<string>, <identifier for the dataset>,
+          "field": "", // <string>, <field affected by the policy>,
+          "encryption": false, // <boolean>, <whether encryption is applied>,
+          "data_steward": "" //<string>, <data steward responsible>
+      }
+  ],
+  "data_classification": "", //<string>, <classification of the data>
+  "data_retention_policy": {
+      "retention_period": "", //<string>, <retention period for data>,
+      "archival_policy": "" //<string>, <archival policy for data>
+  },
+  "access_control": {
+      "authentication_required": "", //<boolean>, <whether authentication is required>,
+      "authorization_required": "", //<boolean>, <whether authorization is required>
+  },
+  "data_privacy": {
+      "gdpr_compliance": "", //<boolean>, <whether GDPR compliance is maintained>,
+      "pii_handling": "", //<boolean>, <whether PII handling is implemented>,
+      "anonymization_techniques": ["" //<string>] //<array of strings>, <anonymization techniques used>
   }
-  
+}

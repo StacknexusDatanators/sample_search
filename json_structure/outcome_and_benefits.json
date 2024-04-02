@@ -1,0 +1,7 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "outcome_description": "", //<string>, <description of the outcome via data product>
+    "benefits": "", //<string>, <desc of the business benefits via data product>
+    "description": "", //<string>, <description of the business, expected outcomes, benefits etc.>
+    "business_kpis": "" //<string>, <quantitative kpi’s of the business, etc.>
+}

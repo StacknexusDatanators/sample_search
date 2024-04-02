@@ -1,0 +1,21 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "data_models": [ //<array>, <list of all the data models used in the data product>
+        ""
+    ],
+    "data_source": "", //<string>, <to identify the data source origin – internal or external or third-party etc.>
+    "datasets": [{
+        "dataset_name": "", //<string>, <name of the dataset>
+        "sources": [{ //<array>, <list of all sources for the dataset>
+            "data_source": "", //<string>, <ID of the data_source depot>
+            "data_source_desc": "", //<string>, <desc of the data_source>
+            "dataset_desc": "", //<string>, <description of the dataset>
+            "format": "", //<string>, <the format of the dataset>
+            "last_updated_at": "", //# <date>, <date last updated>
+            "data_accessibility": "" //<string>, <how is the data accessible – file/api/, etc.>
+        }]
+    }],
+    "algorithms": [ //<array>, <list of algorithms used in the data product>
+        ""
+    ]
+}

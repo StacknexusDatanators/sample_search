@@ -1,0 +1,8 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "hardware_requirements": "", //<string>, <requirements for data product>
+    "software_requirements": "", //<string>, <requirements for data product>
+    "network_requirements": "", //<string>, <network requirements for data product>
+    "version": "", //<string>, <description of the system, the purpose etc.>
+    "description": "" //<string>, <description of the system, etc.>
+}

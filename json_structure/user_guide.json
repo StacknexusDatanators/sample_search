@@ -1,0 +1,23 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "user_manual_link": "", //<string>, <link to the user manual or tutorial video>
+    "faq": [ //<array>, <list of frequently asked questions>
+        {
+            "question": "", //<string>, <question>
+            "answer": "" //<string>, <answer>
+        }
+    ],
+    "troubleshooting": "", //<string>, <troubleshooting guide or tips>
+    "contact_support": [ //<array>, <list of support contacts>
+        {
+            "name": "", //<string>, <name of the support contact>
+            "email_id": "" //<string>, <email address of the support contact>
+        }
+    ],
+    "additional_resources": [ //<array>, <list of additional resources>
+        {
+            "title": "", //<string>, <title of the resource>
+            "link": "" //<string>, <link to the resource>
+        }
+    ]
+}

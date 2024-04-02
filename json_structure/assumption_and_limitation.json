@@ -1,0 +1,14 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "description": "", //<string>, <description of the data product, etc.>
+    "purpose": "", //<string>, <purpose of the data product>
+    "assumptions": [ //<array>, <list of assumptions made during data analysis or modeling>
+        ""
+    ],
+    "limitations": [ //<array>, <list of limitations of the data or analysis>
+        ""
+    ],
+    "additional_notes": [ //<array>, <list of any additional notes or comments>
+        ""
+    ]
+}
