@@ -1,29 +1,43 @@
-
 {
-  "product_id": "", //<string>, <unique identifier for data product>
-  "policies": [
+    "product_id": "", //<string>, <unique identifier for data product>,
+    "dataset_policies": [
       {
-          "policy_id": "", //<string>, <unique identifier for the policy>,
-          "policy_name": "", //<string>, <name of the policy>,
-          "policy_type": "masking/filter", //<string>, <type of policy>,
-          "dataset_id": "", //<string>, <identifier for the dataset>,
-          "field": "", // <string>, <field affected by the policy>,
-          "encryption": false, // <boolean>, <whether encryption is applied>,
-          "data_steward": "" //<string>, <data steward responsible>
-      }
-  ],
-  "data_classification": "", //<string>, <classification of the data>
-  "data_retention_policy": {
-      "retention_period": "", //<string>, <retention period for data>,
-      "archival_policy": "" //<string>, <archival policy for data>
-  },
-  "access_control": {
+        "dataset_id": "", //<string>, <unique identifier for dataset>,
+        "policies": [
+          {
+            "policy_id": "", //<string>, <unique identifier for policy>,
+            "policy_name": "", //<string>, <name of the policy>,
+            "policy_type": "", //<string>, <type of policy: masking/filter>,
+            "field": "", //<string>, <field to which policy is applied>,
+            "encryption": false, //<boolean>, <whether encryption is applied>,
+            "data_steward": "" //<string>, <data steward responsible for policy>
+          }],
+        "retention_policy": {
+          "retention_period": "", //<string>, <retention period for the dataset>,
+          "archival_policy": "" //<string>, <archival policy for the dataset>
+        }}],
+    "product_policies": [
+      {
+        "policy_id": "", //<string>, <unique identifier for policy>,
+        "policy_name": "", //<string>, <name of the policy>,
+        "policy_type": "", //<string>, <type of policy: masking/filter>,
+        "field": "", //<string>, <field to which policy is applied>,
+        "encryption": false, //<boolean>, <whether encryption is applied>,
+        "data_steward": "" //<string>, <data steward responsible for policy>
+      }],
+    "data_classification": "", //<string>, <classification level of the data>,
+    "data_retention_policy": {
+      "retention_period": "", //<string>, <retention period for the data>,
+      "archival_policy": "" //<string>, <archival policy for the data>
+    },
+    "access_control": {
       "authentication_required": "", //<boolean>, <whether authentication is required>,
-      "authorization_required": "", //<boolean>, <whether authorization is required>
-  },
-  "data_privacy": {
+      "authorization_required": "" //<boolean>, <whether authorization is required>
+    },
+    "data_privacy": {
       "gdpr_compliance": "", //<boolean>, <whether GDPR compliance is maintained>,
-      "pii_handling": "", //<boolean>, <whether PII handling is implemented>,
-      "anonymization_techniques": ["" //<string>] //<array of strings>, <anonymization techniques used>
+      "pii_handling": "", //<boolean>, <whether personally identifiable information (PII) handling is enabled>,
+      "anonymization_techniques": [""] //<array of strings>, <anonymization techniques applied to the data>
+    }
   }
-}
+  

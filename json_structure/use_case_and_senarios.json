@@ -1,0 +1,14 @@
+
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "description": "", //<string>, <description for data product>
+    "purpose": "", //<string>, <purpose of the data product>
+    "use_cases": [{
+      "name": "",//<string>,<title of the usecase>
+      "description": "",//<string>,<desciption of the usecase>
+    }],
+    "scenarios": [{
+      "name": "",//<string>,<title of the scenario>
+      "description": "",//<string>,<description of the scenario>
+    }]
+}
