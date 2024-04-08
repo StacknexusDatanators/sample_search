@@ -1,0 +1,27 @@
+{
+    "product_id": "", //<string>, <unique identifier for data product>
+    "datasets": [
+        {
+            "dataset_id": "", //<string>, <unique identifier for dataset>
+            "data_quality": {
+                "measures": {
+                    "accuracy": {
+                        "description": "" //<string>, <description of accuracy measure>
+                    },
+                    "completeness": {
+                        "description": "" //<string>, <description of completeness measure>
+                    },
+                    "timeliness": {
+                        "description": "" //<string>, <description of timeliness measure>
+                    },
+                    "consistency": {
+                        "description": "" //<string>, <description of consistency measure>
+                    },
+                    "uniqueness": {
+                        "description": "" //<string>, <description of uniqueness measure>
+                    }
+                },
+                "dataset_description": "" //<string>, <description of the dataset>
+            }
+        }
+    ]}
