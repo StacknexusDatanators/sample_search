@@ -10,7 +10,9 @@
             "policy_type": "", //<string>, <type of policy: masking/filter>,
             "field": "", //<string>, <field to which policy is applied>,
             "encryption": false, //<boolean>, <whether encryption is applied>,
-            "data_steward": "" //<string>, <data steward responsible for policy>
+            "data_steward": "", //<string>, <data steward responsible for policy>
+            "access_tags_id":[""],//<array of strings>,<unique identifier for access tag>
+
           }],
         "retention_policy": {
           "retention_period": "", //<string>, <retention period for the dataset>,
@@ -22,8 +24,12 @@
         "policy_name": "", //<string>, <name of the policy>,
         "policy_type": "", //<string>, <type of policy: masking/filter>,
         "field": "", //<string>, <field to which policy is applied>,
-        "encryption": false, //<boolean>, <whether encryption is applied>,
-        "data_steward": "" //<string>, <data steward responsible for policy>
+        "encryption": false, //<boolean>, <whether encryption is applied>,""
+        "encryption_type": "",//<string>,<type of encryption>
+        "masked":false,//<boolean>,<whether masking is applied>,""
+        "masked_type":"",//<string>,<type of masking>
+        "data_steward": "", //<string>, <data steward responsible for policy>
+        "acess_tags_id":[""],//<array of strings>,<unique identifier for access tag>
       }],
     "data_classification": "", //<string>, <classification level of the data>,
     "data_retention_policy": {
@@ -31,6 +37,11 @@
       "archival_policy": "" //<string>, <archival policy for the data>
     },
     "access_control": {
+      "access_tags":[{
+        "tag_id":"",//<string>,<unique identifier for access tag>
+        "tag_name":"",//<string>,<name of the access tag>
+        "tag_desc":"",//<string>,<description of access tag>
+      }],
       "authentication_required": "", //<boolean>, <whether authentication is required>,
       "authorization_required": "" //<boolean>, <whether authorization is required>
     },
