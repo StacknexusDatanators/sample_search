@@ -1,0 +1,459 @@
+{
+    "title": "healthcare_360",
+    "description": "Healthcare data from various sources, enabling a holistic view of patients and medical information.",
+    "owners": "Ishmin Singh",
+    "version": "v1.0",
+    "version_date": "December 10, 2023",
+    "tags": [
+        "healthcare",
+        "patient_data"
+    ],
+    "health": {
+        "quality_score": "75%",
+        "operational_health": "80%"
+    },
+    "data_sources": {
+        "table": [
+            {
+                "title": "patients",
+                "description": "Contains patient information, including patient_id, name, contact details, medical history, and other relevant attributes.",
+                "version": "v1.3",
+                "version_date": "December 5, 2023",
+                "workflow": {
+                    "title": "Patient Workflow",
+                    "description": "Automated workflow for processing and analyzing patient data",
+                    "datasets": {
+                        "source": "hospital_records",
+                        "source_name": "patient_records.csv"
+                    },
+                    "streaming": false,
+                    "last_run": "December 8, 2023"
+                },
+                "quality_score": "80%",
+                "completeness": "85%",
+                "recency": "Daily",
+                "frequency": "Real-time",
+                "schema": [
+                    {
+                        "title": "patient_id",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "first_name",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "last_name",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "gender",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "phone_number",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "email",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "birth_date",
+                        "data_type": "timestamp"
+                    },
+                    {
+                        "title": "age",
+                        "data_type": "int"
+                    },
+                    {
+                        "title": "blood_type",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "allergies",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "medical_conditions",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "last_visit_date",
+                        "data_type": "timestamp"
+                    },
+                    {
+                        "title": "occupation",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "insurance_provider",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "emergency_contact",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "address",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "city",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "state",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "country",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "zip_code",
+                        "data_type": "string"
+                    }
+                ]
+            },
+            {
+                "title": "medical_records",
+                "description": "Contains detailed medical records of patients, including diagnosis, treatment plans, medications, and test results.",
+                "version": "v1.2",
+                "version_date": "December 2, 2023",
+                "workflow": {
+                    "title": "Medical Records Workflow",
+                    "description": "Automated workflow for processing and analyzing medical records data",
+                    "datasets": {
+                        "source": "ehr_system",
+                        "source_name": "medical_records.csv"
+                    },
+                    "streaming": false,
+                    "last_run": "December 6, 2023"
+                },
+                "quality_score": "75%",
+                "completeness": "90%",
+                "recency": "Daily",
+                "frequency": "Real-time",
+                "schema": [
+                    {
+                        "title": "patient_id",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "diagnosis",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "treatment_plan",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "medications",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "test_results",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "hospital_name",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "admit_date",
+                        "data_type": "timestamp"
+                    },
+                    {
+                        "title": "discharge_date",
+                        "data_type": "timestamp"
+                    },
+                    {
+                        "title": "physician",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "insurance_claim_details",
+                        "data_type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    "lens": {
+        "name": "Health Insights Lens",
+        "description": "Provides insights into patient health trends and medical history.",
+        "stack": [
+            "spark",
+            "python",
+            "SQL"
+        ],
+        "tags": [
+            "health_insights",
+            "medical_analytics"
+        ],
+        "published": "December 15, 2023",
+        "updated_at": "December 30, 2023",
+        "version": "v1.0",
+        "entities": {
+            "entity_1": "Patient Health Profiles",
+            "entity_2": "Medical Treatment History"
+        }
+    },
+    "System_Requirements_and_Dependencies": {
+        "Compute_Cluster": {
+            "Title": "Compute Cluster",
+            "Description": "Utilized Apache Spark for large-scale data processing.",
+            "Details": {
+                "Type": "Apache Spark",
+                "Number_of_Nodes": 2,
+                "Node_Type": "High-memory instances (e.g., r5.xlarge)",
+                "Total_CPU_Cores": 32,
+                "Total_RAM": "128 GB"
+            }
+        },
+        "Streaming_Cluster": {
+            "Title": "Apache Kafka Cluster",
+            "Description": "Employed Apache Kafka for real-time streaming of patient health events.",
+            "Details": {
+                "Number_of_Brokers": 3,
+                "Broker_Instance_Type": "Instance type with at least 4 CPU cores and 16 GB RAM per broker.",
+                "Total_CPU_Cores": 12,
+                "Total_RAM": "48 GB"
+            }
+        },
+        "Database Storage": {
+            "Title": "PostgreSQL Database",
+            "Description": "Utilized PostgreSQL as the primary database for storing enriched patient and medical data.",
+            "Details": {
+                "Instance_Type": "High-memory instance (e.g., r5.large)",
+                "CPU_Cores": "At least 2",
+                "RAM": "At least 8 GB",
+                "Storage": "Enough capacity to handle the 'medical_records' dataset."
+            }
+        }
+    },
+    "Built_Using": {
+        "Python": {
+            "Title": "Python",
+            "Description": "For data processing, analysis, and machine learning tasks."
+        },
+        "Apache_Kafka": {
+            "Title": "Apache Kafka",
+            "Description": "To enable real-time streaming of patient health events and data."
+        },
+        "Apache_Spark": {
+            "Title": "Apache Spark",
+            "Description": "For handling large-scale data processing and analytics efficiently."
+        },
+        "PostgreSQL": {
+            "Title": "PostgreSQL",
+            "Description": "As the primary database to store enriched patient and medical data securely."
+        }
+    },
+    "TechnicalSpecifications": {
+        "Title": "Healthcare 360 Lens",
+        "Description": "Empowers healthcare providers with comprehensive patient health insights.",
+        "Features": {
+            "Medical History Analysis": "Leverages patient medical records for treatment planning and diagnosis.",
+            "Health Trends Monitoring": "Tracks and analyzes health trends to enhance patient care and outcomes."
+        }
+    },
+    "Recency": {
+        "Title": "Health Event Recency",
+        "Description": "Analyzes recent health events and medical visits for personalized patient care.",
+        "Usage": "Identifies recent health issues for timely interventions and treatment."
+    },
+    "Frequency": {
+        "Title": "Health Monitoring Frequency",
+        "Description": "Assesses patient health monitoring frequency for chronic conditions management.",
+        "Usage": "Tracks monitoring schedules to ensure adherence and effectiveness of treatment plans."
+    },
+    "Monitoring": {
+        "Title": "Health Progress Monitoring",
+        "Description": "Continuously monitors patient health progress for treatment efficacy.",
+        "Usage": "Monitors changes in health status to adjust treatment plans and interventions as needed."
+    },
+    "Columns": {
+        "Patient": {
+            "Title": "Patient",
+            "Description": "Attributes related to patient information and medical history for analysis.",
+            "Attributes": [
+                {
+                    "Attribute": "patient_id",
+                    "Description": "Unique identifier of the patient"
+                },
+                {
+                    "Attribute": "first_name",
+                    "Description": "First name of the patient"
+                },
+                {
+                    "Attribute": "last_name",
+                    "Description": "Last name of the patient"
+                },
+                {
+                    "Attribute": "birth_date",
+                    "Description": "Birth date of the patient"
+                },
+                {
+                    "Attribute": "gender",
+                    "Description": "Gender of the patient"
+                },
+                {
+                    "Attribute": "marital_status",
+                    "Description": "Marital status of the patient"
+                },
+                {
+                    "Attribute": "allergies",
+                    "Description": "Known allergies of the patient"
+                },
+                {
+                    "Attribute": "medical_conditions",
+                    "Description": "Chronic medical conditions of the patient"
+                },
+                {
+                    "Attribute": "phone_number",
+                    "Description": "Contact number of the patient"
+                },
+                {
+                    "Attribute": "email",
+                    "Description": "Email address of the patient"
+                },
+                {
+                    "Attribute": "address",
+                    "Description": "Home address of the patient"
+                },
+                {
+                    "Attribute": "city",
+                    "Description": "City name"
+                },
+                {
+                    "Attribute": "state",
+                    "Description": "State code of the patient's address"
+                },
+                {
+                    "Attribute": "country",
+                    "Description": "Country name"
+                },
+                {
+                    "Attribute": "zip_code",
+                    "Description": "ZIP code associated with the patient's address"
+                },
+                {
+                    "Attribute": "occupation",
+                    "Description": "Patient's occupation or profession"
+                },
+                {
+                    "Attribute": "insurance_provider",
+                    "Description": "Health insurance provider"
+                },
+                {
+                    "Attribute": "emergency_contact",
+                    "Description": "Emergency contact details"
+                }
+            ]
+        },
+        "Medical Records": {
+            "Title": "Medical Records",
+            "Description": "Attributes related to detailed medical records of patients for analysis.",
+            "Attributes": [
+                {
+                    "Attribute": "patient_id",
+                    "Description": "Unique identifier of the patient"
+                },
+                {
+                    "Attribute": "diagnosis",
+                    "Description": "Diagnosis information from medical examinations"
+                },
+                {
+                    "Attribute": "treatment_plan",
+                    "Description": "Planned treatment procedures or interventions"
+                },
+                {
+                    "Attribute": "medications",
+                    "Description": "Prescribed medications and dosage"
+                },
+                {
+                    "Attribute": "test_results",
+                    "Description": "Results from diagnostic tests and lab reports"
+                },
+                {
+                    "Attribute": "hospital_name",
+                    "Description": "Name of the hospital or healthcare facility"
+                },
+                {
+                    "Attribute": "admit_date",
+                    "Description": "Date of patient admission for treatment"
+                },
+                {
+                    "Attribute": "discharge_date",
+                    "Description": "Date of patient discharge after treatment"
+                },
+                {
+                    "Attribute": "physician",
+                    "Description": "Attending physician or healthcare provider"
+                },
+                {
+                    "Attribute": "insurance_claim_details",
+                    "Description": "Details of insurance claims related to the medical treatment"
+                }
+            ]
+        }
+    },
+    "GovernancePoliciesAndStewardship": {
+        "Title": "Governance Policies and Stewardship",
+        "Description": "Establishing policies and roles for effective healthcare data governance and stewardship.",
+        "AccessControl": {
+            "RoleBasedAccess": "Granting access based on roles to maintain patient data security and privacy.",
+            "DiscretionaryAccess": "Implementing access control mechanisms to ensure only authorized personnel can view sensitive medical information."
+        },
+        "StewardResponsibilities": {
+            "Title": "Steward Responsibilities",
+            "Description": "Defining roles and responsibilities for healthcare data ownership and stewardship.",
+            "Responsibilities": [
+                "Assigning accountable stewards to oversee data quality and integrity.",
+                "Ensuring compliance with healthcare regulations and patient privacy laws."
+            ]
+        }
+    },
+    "DataQualityAndGovernance": {
+        "Title": "Quality Measures and Standards",
+        "Description": "Ensuring high-quality healthcare data through strict measures and adherence to industry standards.",
+        "Approach": "Conducting regular audits and assessments across data dimensions such as accuracy, completeness, timeliness, consistency, and security.",
+        "AuditsAndFeedback": "Implementing feedback mechanisms and corrective actions to improve data quality continually."
+    },
+    "CleansingAndPreprocessing": {
+        "Title": "Data Cleansing and Preprocessing",
+        "Description": "Thorough cleaning and preprocessing procedures to maintain the integrity of healthcare data.",
+        "Processes": [
+            "Removing duplicates and inconsistencies in patient records.",
+            "Standardizing medical terminology and coding for uniformity.",
+            "Handling missing values and outliers in medical datasets.",
+            "Encoding sensitive information following encryption protocols."
+        ]
+    },
+    "UseCasesAndScenarios": {
+        "BusinessAnalysisUseCases": [
+            {
+                "Title": "Personalized Patient Care Plans",
+                "Description": "Leverage patient health insights to create customized care plans for improved treatment outcomes."
+            },
+            {
+                "Title": "Chronic Condition Management",
+                "Description": "Monitor and analyze chronic conditions to optimize treatment strategies and enhance patient well-being."
+            },
+            {
+                "Title": "Healthcare Resource Allocation",
+                "Description": "Utilize data analysis to allocate resources efficiently and improve healthcare service delivery."
+            },
+            {
+                "Title": "Medical Treatment Effectiveness",
+                "Description": "Assess the effectiveness of medical treatments and interventions through data-driven analytics."
+            },
+            {
+                "Title": "Healthcare Fraud Detection",
+                "Description": "Detect and prevent healthcare fraud by analyzing patterns and anomalies in medical billing and claims data."
+            }
+        ]
+    }
+}

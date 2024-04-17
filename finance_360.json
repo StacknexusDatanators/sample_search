@@ -1,0 +1,502 @@
+{
+    "title": "Finance_360",
+    "description": "Financial data from various sources, enabling a comprehensive view of financial activities and customer transactions.",
+    "owners": "Ishmin Singh",
+    "version": "v1.0",
+    "version_date": "December 3, 2023",
+    "tags": [
+        "finance",
+        "customer_transactions"
+    ],
+    "health": {
+        "quality_score": "75%",
+        "operational_health": "80%"
+    },
+    "data_sources": {
+        "table": [
+            {
+                "title": "financial_transactions",
+                "description": "Contains financial transaction details, including transaction_id, customer_id, transaction_amount, and other relevant attributes.",
+                "version": "v2.0",
+                "version_date": "December 1, 2023",
+                "workflow": {
+                    "title": "Financial Transactions Workflow",
+                    "description": "Automated workflow for processing and analyzing financial transaction data.",
+                    "datasets": {
+                        "source": "banking_system",
+                        "source_name": "transaction_data.csv"
+                    },
+                    "streaming": false,
+                    "last_run": "November 30, 2023"
+                },
+                "quality_score": "80%",
+                "completeness": "90%",
+                "recency": "Daily",
+                "frequency": "Real-time",
+                "schema": [
+                    {
+                        "title": "transaction_id",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "customer_id",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "transaction_date",
+                        "data_type": "timestamp"
+                    },
+                    {
+                        "title": "transaction_amount",
+                        "data_type": "double"
+                    },
+                    {
+                        "title": "transaction_type",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "category",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "payment_method",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "currency",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "card_type",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "merchant_name",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "merchant_city",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "merchant_country",
+                        "data_type": "string"
+                    }
+                ]
+            },
+            {
+                "title": "credit_scores",
+                "description": "Contains credit score information of customers, including customer_id, credit_score, credit_limit, and other relevant attributes.",
+                "version": "v1.5",
+                "version_date": "November 29, 2023",
+                "workflow": {
+                    "title": "Credit Scores Workflow",
+                    "description": "Automated workflow for processing and analyzing credit score data.",
+                    "datasets": {
+                        "source": "credit_bureau",
+                        "source_name": "credit_scores.csv"
+                    },
+                    "streaming": false,
+                    "last_run": "November 28, 2023"
+                },
+                "quality_score": "85%",
+                "completeness": "95%",
+                "recency": "Weekly",
+                "frequency": "Batch",
+                "schema": [
+                    {
+                        "title": "customer_id",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "credit_score",
+                        "data_type": "int"
+                    },
+                    {
+                        "title": "credit_limit",
+                        "data_type": "double"
+                    },
+                    {
+                        "title": "credit_utilization",
+                        "data_type": "double"
+                    },
+                    {
+                        "title": "last_updated",
+                        "data_type": "timestamp"
+                    }
+                ]
+            },
+            {
+                "title": "investment_portfolio",
+                "description": "Contains information about customer's investment portfolio, including customer_id, asset_class, investment_amount, and other relevant attributes.",
+                "version": "v2.0",
+                "version_date": "December 2, 2023",
+                "workflow": {
+                    "title": "Investment Portfolio Workflow",
+                    "description": "Automated workflow for processing and analyzing investment portfolio data.",
+                    "datasets": {
+                        "source": "investment_firm",
+                        "source_name": "investment_portfolio_data.csv"
+                    },
+                    "streaming": false,
+                    "last_run": "December 1, 2023"
+                },
+                "quality_score": "75%",
+                "completeness": "85%",
+                "recency": "Monthly",
+                "frequency": "Batch",
+                "schema": [
+                    {
+                        "title": "customer_id",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "asset_class",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "investment_amount",
+                        "data_type": "double"
+                    },
+                    {
+                        "title": "investment_date",
+                        "data_type": "timestamp"
+                    }
+                ]
+            },
+            {
+                "title": "income_expenses",
+                "description": "Contains income and expenses information of customers, including customer_id, income_amount, expense_amount, and other relevant attributes.",
+                "version": "v2.5",
+                "version_date": "December 3, 2023",
+                "workflow": {
+                    "title": "Income Expenses Workflow",
+                    "description": "Automated workflow for processing and analyzing income and expenses data.",
+                    "datasets": {
+                        "source": "financial_institutions",
+                        "source_name": "income_expenses_data.csv"
+                    },
+                    "streaming": false,
+                    "last_run": "December 2, 2023"
+                },
+                "quality_score": "78%",
+                "completeness": "90%",
+                "recency": "Daily",
+                "frequency": "Real-time",
+                "schema": [
+                    {
+                        "title": "customer_id",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "income_amount",
+                        "data_type": "double"
+                    },
+                    {
+                        "title": "expense_amount",
+                        "data_type": "double"
+                    },
+                    {
+                        "title": "transaction_date",
+                        "data_type": "timestamp"
+                    },
+                    {
+                        "title": "transaction_category",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "transaction_type",
+                        "data_type": "string"
+                    },
+                    {
+                        "title": "currency",
+                        "data_type": "string"
+                    }
+                ]
+            }
+        ]
+    },
+    "lens": {
+        "name": "Finance Insights Lens",
+        "description": "Provides insights into customer financial behavior and trends.",
+        "stack": [
+            "SQL",
+            "R",
+            "Tableau"
+        ],
+        "tags": [
+            "financial_insights",
+            "analytics"
+        ],
+        "published": "December 10, 2023",
+        "updated_at": "December 20, 2023",
+        "version": "v1.1",
+        "entities": {
+            "entity_1": "Financial Profiles",
+            "entity_2": "Investment Strategies"
+        }
+    },
+    "System_Requirements_and_Dependencies": {
+        "Compute_Cluster": {
+            "Title": "Compute Cluster",
+            "Description": "Utilized for large-scale financial data processing and analysis.",
+            "Details": {
+                "Type": "High-performance Computing Cluster",
+                "Number_of_Nodes": 5,
+                "Node_Type": "High-memory and High-CPU instances",
+                "Total_CPU_Cores": 80,
+                "Total_RAM": "256 GB"
+            }
+        },
+        "Streaming_Cluster": {
+            "Title": "Real-time Data Processing Cluster",
+            "Description": "Employed for real-time processing of financial transactions and events.",
+            "Details": {
+                "Number_of_Brokers": 4,
+                "Broker_Instance_Type": "Instance type with at least 16 CPU cores and 64 GB RAM per broker.",
+                "Total_CPU_Cores": 64,
+                "Total_RAM": "256 GB"
+            }
+        },
+        "Database Storage": {
+            "Title": "Financial Data Warehouse",
+            "Description": "Utilized as the central repository for financial data storage and retrieval.",
+            "Details": {
+                "Instance_Type": "High-performance database instance",
+                "CPU_Cores": "At least 8",
+                "RAM": "At least 32 GB",
+                "Storage": "Capacity to store extensive financial datasets."
+            }
+        }
+    },
+    "Built_Using": {
+        "SQL": {
+            "Title": "SQL",
+            "Description": "For querying and manipulating financial data efficiently."
+        },
+        "R": {
+            "Title": "R",
+            "Description": "Utilized for statistical analysis and visualization of financial trends."
+        },
+        "Tableau": {
+            "Title": "Tableau",
+            "Description": "For creating interactive visualizations and dashboards for financial insights."
+        }
+    },
+    "TechnicalSpecifications": {
+        "Title": "Finance 360 Lens",
+        "Description": "Empowers financial institutions with comprehensive insights into customer financial activities.",
+        "Features": {
+            "Transaction Monitoring and Analysis": "Allows for detailed tracking and analysis of customer transactions for fraud detection and pattern recognition."
+        }
+    },
+    "Recency": {
+        "Title": "Transaction Recency",
+        "Description": "Analyzes the recency of customer transactions for targeted marketing and personalized financial services.",
+        "Usage": "Identifies recent transaction patterns for tailored offerings."
+    },
+    "Frequency": {
+        "Title": "Transaction Frequency",
+        "Description": "Analyzes the frequency of customer transactions to understand financial habits and preferences.",
+        "Usage": "Identifies high-frequency customers for loyalty programs and promotional offers."
+    },
+    "Monitoring": {
+        "Title": "Financial Monitoring",
+        "Description": "Continuously monitors financial activities for early detection of anomalies and suspicious behaviors.",
+        "Usage": "Ensures financial security and customer trust through proactive monitoring."
+    },
+    "Columns": {
+        "Customer Transactions": {
+            "Title": "Customer Transactions",
+            "Description": "Attributes related to customer financial transactions for analysis.",
+            "Attributes": [
+                {
+                    "Attribute": "transaction_id",
+                    "Description": "Unique identifier of the financial transaction"
+                },
+                {
+                    "Attribute": "customer_id",
+                    "Description": "Identifier of the customer associated with the transaction"
+                },
+                {
+                    "Attribute": "transaction_date",
+                    "Description": "Date and time of the transaction"
+                },
+                {
+                    "Attribute": "transaction_amount",
+                    "Description": "Amount involved in the transaction"
+                },
+                {
+                    "Attribute": "transaction_type",
+                    "Description": "Type of financial transaction (e.g., debit, credit)"
+                },
+                {
+                    "Attribute": "category",
+                    "Description": "Category of the transaction (e.g., groceries, entertainment)"
+                },
+                {
+                    "Attribute": "payment_method",
+                    "Description": "Method used for the payment (e.g., credit card, cash)"
+                },
+                {
+                    "Attribute": "currency",
+                    "Description": "Currency used for the transaction"
+                },
+                {
+                    "Attribute": "card_type",
+                    "Description": "Type of card used in the transaction"
+                },
+                {
+                    "Attribute": "merchant_name",
+                    "Description": "Name of the merchant where the transaction took place"
+                },
+                {
+                    "Attribute": "merchant_city",
+                    "Description": "City where the merchant is located"
+                },
+                {
+                    "Attribute": "merchant_country",
+                    "Description": "Country where the merchant operates"
+                }
+            ]
+        },
+        "Credit Scores": {
+            "Title": "Credit Scores",
+            "Description": "Attributes related to customer credit scores for analysis and risk assessment.",
+            "Attributes": [
+                {
+                    "Attribute": "customer_id",
+                    "Description": "Unique identifier of the customer's credit profile"
+                },
+                {
+                    "Attribute": "credit_score",
+                    "Description": "Numeric value representing the customer's creditworthiness"
+                },
+                {
+                    "Attribute": "credit_limit",
+                    "Description": "Maximum amount a customer can borrow or spend"
+                },
+                {
+                    "Attribute": "credit_utilization",
+                    "Description": "Percentage of credit limit currently used by the customer"
+                },
+                {
+                    "Attribute": "last_updated",
+                    "Description": "Date of the last update to the credit score"
+                }
+            ]
+        },
+        "Investment Portfolio": {
+            "Title": "Investment Portfolio",
+            "Description": "Attributes related to customer investment holdings and transactions for analysis.",
+            "Attributes": [
+                {
+                    "Attribute": "customer_id",
+                    "Description": "Identifier of the customer's investment portfolio"
+                },
+                {
+                    "Attribute": "asset_class",
+                    "Description": "Type of asset in which the customer has invested"
+                },
+                {
+                    "Attribute": "investment_amount",
+                    "Description": "Amount invested in the asset"
+                },
+                {
+                    "Attribute": "investment_date",
+                    "Description": "Date of the investment transaction"
+                }
+            ]
+        },
+        "Income Expenses": {
+            "Title": "Income Expenses",
+            "Description": "Attributes related to customer income and expenses for financial analysis.",
+            "Attributes": [
+                {
+                    "Attribute": "customer_id",
+                    "Description": "Identifier of the customer's income and expenses record"
+                },
+                {
+                    "Attribute": "income_amount",
+                    "Description": "Amount of income earned by the customer"
+                },
+                {
+                    "Attribute": "expense_amount",
+                    "Description": "Amount of money spent by the customer"
+                },
+                {
+                    "Attribute": "transaction_date",
+                    "Description": "Date of the income or expense transaction"
+                },
+                {
+                    "Attribute": "transaction_category",
+                    "Description": "Category of the transaction (e.g., salary, rent)"
+                },
+                {
+                    "Attribute": "transaction_type",
+                    "Description": "Type of financial transaction (e.g., income, expense)"
+                },
+                {
+                    "Attribute": "currency",
+                    "Description": "Currency in which the transaction amount is recorded"
+                }
+            ]
+        }
+    },
+    "GovernancePoliciesAndStewardship": {
+        "Title": "Finance Governance Policies and Stewardship",
+        "Description": "Establishing policies and roles for effective data governance and stewardship in financial data management.",
+        "AccessControl": {
+            "RoleBasedAccess": "Granting access based on roles to maintain data security and confidentiality.",
+            "DiscretionaryAccess": "Implementing access controls to protect sensitive financial information."
+        },
+        "StewardResponsibilities": {
+            "Title": "Finance Steward Responsibilities",
+            "Description": "Defining roles and responsibilities for data ownership and stewardship in the financial domain.",
+            "Responsibilities": [
+                "Maintaining data integrity and accuracy in financial records.",
+                "Ensuring compliance with financial regulations and standards."
+            ]
+        }
+    },
+    "DataQualityAndGovernance": {
+        "Title": "Financial Data Quality Measures and Standards",
+        "Description": "Ensuring high-quality financial data through rigorous measures and adherence to standards.",
+        "Approach": "Comprehensive assessment across dimensions such as accuracy, completeness, timeliness, consistency, and integrity.",
+        "AuditsAndFeedback": "Regular audits and feedback mechanisms to improve the quality and reliability of financial data."
+    },
+    "CleansingAndPreprocessing": {
+        "Title": "Financial Data Cleansing and Preprocessing",
+        "Description": "Thorough cleaning and preprocessing procedures to ensure data accuracy and consistency in financial records.",
+        "Processes": [
+            "Removing duplicate entries and inconsistencies in financial data.",
+            "Transforming and standardizing data formats for uniformity.",
+            "Handling missing values and outliers to enhance data quality.",
+            "Applying algorithms for data imputation and validation in financial datasets."
+        ]
+    },
+    "UseCasesAndScenarios": {
+        "FinancialAnalysisUseCases": [
+            {
+                "Title": "Risk Assessment and Management",
+                "Description": "Analyze credit scores and financial behaviors to assess and manage financial risk effectively."
+            },
+            {
+                "Title": "Investment Portfolio Optimization",
+                "Description": "Utilize portfolio analysis to optimize investment strategies and maximize returns for clients."
+            },
+            {
+                "Title": "Income-Expense Tracking",
+                "Description": "Track income and expenses to provide insights for budgeting and financial planning."
+            },
+            {
+                "Title": "Fraud Detection",
+                "Description": "Implement AI algorithms to detect fraudulent financial activities and protect customer assets."
+            },
+            {
+                "Title": "Customer Profitability Analysis",
+                "Description": "Analyze customer transactions to identify profitable segments and tailor services accordingly."
+            }
+        ]
+    }
+}
